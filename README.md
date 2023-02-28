@@ -8,7 +8,7 @@ Jika tidak ingin install ulang node, bisa menggunakan Node Version Manager
 
 ### First Step
 ```bash
-git clone 
+git clone https://github.com/m1kael1/mini-project-client.git
 ```
 
 ```bash
