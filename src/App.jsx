@@ -1,13 +1,15 @@
 import React from 'react'
-import {BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './components/Home'
-import Contact from './components/Contact'
-import Product from './components/Product'
+import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import Product from './pages/Product'
 
 const App = () => {
   return (
-    <div>
+    <>
     <BrowserRouter>
+    <Navbar/>
      <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/product" element={<Product />} />
@@ -15,7 +17,7 @@ const App = () => {
     </Routes>
     </BrowserRouter>
    
-  </div>
+  </>
   )
 }
 
