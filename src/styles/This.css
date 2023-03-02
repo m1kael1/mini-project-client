@@ -1,11 +1,12 @@
 .this {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	width: auto;
 	align-items: center;
 	line-height: 135%;
 	height: 446px;
 	padding: 40px 0;
+	gap: 127px;
 }
 
 .this-text {

@@ -6,8 +6,8 @@ import "../styles/Navbar.css";
 
 const Navbar = () => {
 	return (
-		<div>
-			<section className="min-w-300 bg-green-500 w-full top-0 fixed left-0 h-[72px] bg-opacity-60 flex items-center justify-between z-50">
+		<div className="container-nav w-full min-w-300 h-[72px] bg-green-500 top-0 fixed left-0 flex items-center flex z-50 bg-opacity-60 justify-center">
+			<section className="min-w-300 w-[1385px] h-[62px] flex items-center justify-between">
 				<div className="h-full ml-10 flex justify-center items-center">
 					<img className="p-1" src={logo} alt="" />
 					<p className="text-xl font-bold text-white">LOGO</p>
