@@ -1,0 +1,33 @@
+.this {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin-top: 200px;
+    align-items: center;
+    line-height: 135%;
+    height: 446px;
+    padding: 40px 0;
+}
+
+.this-pict {}
+
+.this-text {
+    display: flex;
+    font-family: 'poppins', sans-serif;
+    min-width: 300px;
+    width: 900px;
+    text-align: justify;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 25px;
+    width: 560px;
+}
+
+.this-text h1 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 105%;
+
+
+    letter-spacing: 0.07em;
+}
