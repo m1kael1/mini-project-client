@@ -17,7 +17,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
-
     </>
   )
 }
