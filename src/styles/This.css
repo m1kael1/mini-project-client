@@ -1,24 +1,37 @@
 .this {
 	display: flex;
+	min-width: 300px;
 	justify-content: center;
-	width: auto;
+	width: 100%;
 	align-items: center;
-	line-height: 135%;
-	height: 446px;
-	padding: 40px 0;
+	height: 465px;
 	gap: 127px;
+	padding: 40px 0px;
+}
+
+.this-pict img {
+	width: 464px;
+	height: 386px;
+}
+
+.this-pict {
+	min-width: 464px;
+	width: 464px;
+	height: 386px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .this-text {
 	display: flex;
 	font-family: "poppins", sans-serif;
 	min-width: 300px;
-	width: 900px;
 	text-align: justify;
-	align-items: flex-end;
 	flex-direction: column;
 	gap: 25px;
 	width: 560px;
+	height: 350px;
 }
 
 .this-text h1 {
@@ -26,4 +39,21 @@
 	font-size: 34px;
 	line-height: 105%;
 	letter-spacing: 0.07em;
+	display: flex;
+	justify-content: end;
+	min-width: 380px;
+}
+
+.this-text p {
+	height: 289px;
+	width: 560px;
+	min-width: 300px;
+}
+.this-container {
+	min-width: 300px;
+	width: 1152px;
+	height: 386px;
+	display: flex;
+	gap: 127px;
+	align-items: center;
 }
