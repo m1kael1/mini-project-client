@@ -25,7 +25,7 @@ const Brand = () => {
 					</a>
 				</div>
 				<div className="juniper w-[369px] h-[100px]">
-					<a href="https://www.juniper.net/">
+					<a href="https://www.juniper.netl,l,/">
 						<img src={juniper} alt="juniper" />
 					</a>
 				</div>
