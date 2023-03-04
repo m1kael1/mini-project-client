@@ -17,8 +17,8 @@ const Quotes = () => {
 				<div className="hide-scroll pl[98px] h-[450px] w-[1152px] flex relative overflow-x-scroll gap-[24px] m-w-300">
 					<span className="gradien-slide w-[98px] h-[397px] flex z-30 absolute left-0 "></span>
 					<span className="gradien-slide w-[98px] h-[397px] flex z-30 absolute -right-1 rotate-180 "></span>
-					<div className="hide-scroll pl[98px] h-[450px] w-[1152px] flex relative overflow-x-scroll gap-[24px] m-w-300">
-						<div className="con-card w-[368px] h-[397px] relative flex justify-center ml-[98px]">
+					<div className="hide-scroll pl-[98px] pr-[98px] h-[450px] w-[1152px] flex relative overflow-x-scroll gap-[24px] m-w-300">
+						<div className="con-card w-[368px] h-[397px] relative flex justify-center">
 							<div className="rounded-full w-[140px] h-[140px] overflow-hidden absolute z-20">
 								<img src={quotes1} alt="" />
 							</div>
