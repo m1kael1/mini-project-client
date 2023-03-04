@@ -4,9 +4,6 @@
 .juniper {
 	filter: contrast(0);
 }
-.cisco:hover {
-	filter: contrast(1);
-}
 .cisco:hover,
 .huawei:hover,
 .hp:hover,
