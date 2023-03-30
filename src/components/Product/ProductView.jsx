@@ -5,9 +5,9 @@ import { Link, useParams } from "react-router-dom";
 import whatsapplogo from "../../assets/whatsapp-logo.svg";
 import Footer from "../Footer";
 
-const ProductView = ({ products }) => {
+const ProductView = ({ filter, setFilter, item }) => {
 	const params = useParams();
-	const testcall = products[params.id - 1];
+	const testcall = item[params.id - 1];
 
 	// untuk list desc
 	const list = testcall.desc;
@@ -15,7 +15,7 @@ const ProductView = ({ products }) => {
 	return (
 		<div>
 			<Search />
-			<Categories />
+			<Categories filter={filter} setFilter={setFilter}></Categories>
 			{/* product view */}
 			<div className="product-detail ">
 				<div className="w-full flex h-[632px] justify-center gap-[26px]">
@@ -101,8 +101,10 @@ const ProductView = ({ products }) => {
 							DESKRIPSI PRODUK
 						</h1>
 						<ul className="w-full h-[412px] p-0 ">
-							{list.map((list) => (
-								<li className="list-none font-['poppins']">{list}</li>
+							{list.map((list, index) => (
+								<li key={index} className="list-none font-['poppins']">
+									{list}
+								</li>
 							))}
 						</ul>
 					</div>

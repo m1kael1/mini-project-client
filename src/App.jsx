@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import ProductView from "./components/Product/ProductView";
 import products from "./data/products";
+import Layanan from "./pages/Layanan";
 
 const App = () => {
 	return (
@@ -14,12 +15,13 @@ const App = () => {
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/layanan" element={<Layanan />} />
 					<Route path="/product" element={<Product />} />
 					<Route path="/contact" element={<Contact />} />
-					{/* produk */}
+					{/* produk view */}
 					<Route
 						path="/product/:id"
-						element={<ProductView key={products.id} products={products} />}
+						element={<ProductView key={products.id} item={products} />}
 					/>
 				</Routes>
 			</BrowserRouter>

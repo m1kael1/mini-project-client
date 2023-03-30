@@ -1,0 +1,32 @@
+.h-btncategories:hover .h-icon {
+	transform: rotate(0deg);
+	transition: all 0.3s ease-in-out;
+}
+.h-btncategories:hover .submenu-con {
+	display: flex;
+}
+
+.submenu-con {
+	display: none;
+	background: rgba(96, 96, 96, 0.6);
+	backdrop-filter: blur(2px);
+	border-radius: 0px 0px 10px 10px;
+	position: absolute;
+	transition: all 0.3s ease-in-out;
+}
+
+.submenu-con button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: poppins;
+	letter-spacing: 0.22em;
+	color: #ffffff;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.submenu-con button:hover {
+	background: #a3de83;
+	color: black;
+}
