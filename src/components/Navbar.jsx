@@ -1,5 +1,4 @@
 import React from "react";
-import ellipse from "../assets/ellipse.svg";
 import logo from "../assets/logo.svg";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
@@ -15,7 +14,7 @@ const Navbar = () => {
 				<div className=" ml-10 mr-10 w-96 h-full items-center flex justify-between">
 					<li className="list-none">
 						<NavLink
-							to="/"
+							to="/layanan"
 							className="link-menu h-12 flex items-center justify-center font-normal text-white text-xs"
 						>
 							LAYANAN
@@ -37,13 +36,6 @@ const Navbar = () => {
 							HUBUNGI KAMI
 						</NavLink>
 					</li>
-				</div>
-				<div className="mr-10 h-full flex items-center">
-					<img
-						className="m-auto w-[48px] h-[48px] min-w-10 min-h-10 min-w-40 min-h-40"
-						src={ellipse}
-						alt=""
-					/>
 				</div>
 			</section>
 		</div>

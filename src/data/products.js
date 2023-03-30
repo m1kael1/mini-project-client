@@ -29,7 +29,8 @@ var products = [
 			"Silahkan Chat/Call/WA untuk Detail",
 		],
 
-		brand: "cisco",
+		brand: "juniper",
+		mark: "jpRouter",
 	},
 	{
 		id: 2,
@@ -40,7 +41,8 @@ var products = [
 		categories1: "Berkas",
 		categories2: "Switch",
 		desc: [],
-		brand: "",
+		brand: "hp",
+		mark: "hpSwitch",
 	},
 	{
 		id: 3,
@@ -51,7 +53,8 @@ var products = [
 		categories1: "Berkas",
 		categories2: "Router",
 		desc: [],
-		brand: "",
+		brand: "cisco",
+		mark: "cscRouter",
 	},
 	{
 		id: 4,
@@ -62,7 +65,8 @@ var products = [
 		categories1: "Berkas",
 		categories2: "Switch",
 		desc: [],
-		brand: "",
+		brand: "huawei",
+		mark: "hwSwitch",
 	},
 	{
 		id: 5,
@@ -73,7 +77,8 @@ var products = [
 		categories1: "Berkas",
 		categories2: "Router",
 		desc: [],
-		brand: "",
+		brand: "cisco",
+		mark: "cscRouter",
 	},
 	{
 		id: 6,
@@ -84,7 +89,8 @@ var products = [
 		categories1: "Berkas",
 		categories2: "Switch",
 		desc: [],
-		brand: "",
+		brand: "hp",
+		mark: "hpSwitch",
 	},
 	{
 		id: 7,
@@ -95,7 +101,8 @@ var products = [
 		categories1: "Berkas",
 		categories2: "Switch",
 		desc: [],
-		brand: "",
+		brand: "huawei",
+		mark: "hwSwitch",
 	},
 	{
 		id: 8,
@@ -106,7 +113,8 @@ var products = [
 		categories1: "Berkas",
 		categories2: "Router",
 		desc: [],
-		brand: "",
+		brand: "juniper",
+		mark: "jpRouter",
 	},
 	{
 		id: 9,
@@ -117,7 +125,8 @@ var products = [
 		categories1: "Berkas",
 		categories2: "Router",
 		desc: [],
-		brand: "",
+		brand: "cisco",
+		mark: "cscRouter",
 	},
 	{
 		id: 10,
@@ -128,7 +137,8 @@ var products = [
 		categories1: "Berkas",
 		categories2: "Switch",
 		desc: [],
-		brand: "",
+		brand: "hp",
+		mark: "hpSwitch",
 	},
 	{
 		id: 11,
@@ -139,7 +149,8 @@ var products = [
 		categories1: "Berkas",
 		categories2: "Switch",
 		desc: [],
-		brand: "",
+		brand: "huawei",
+		mark: "hwSwitch",
 	},
 	{
 		id: 12,
@@ -150,7 +161,20 @@ var products = [
 		categories1: "Berkas",
 		categories2: "Router",
 		desc: [],
-		brand: "",
+		brand: "juniper",
+		mark: "jpRouter",
+	},
+	{
+		id: 13,
+		img: "https://www.juniper.net/content/dam/www/assets/images/us/en/products/routers/mx-series/mx480/mx480-frontwtop.png/jcr:content/renditions/cq5dam.web.1280.1280.png",
+		name: "juniper mx 400",
+		stok: "1",
+		price: "398.000.000",
+		categories1: "Berkas",
+		categories2: "Server",
+		desc: [],
+		brand: "juniper",
+		mark: "jpServer",
 	},
 ];
 export default products;
