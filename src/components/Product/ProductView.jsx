@@ -1,21 +1,20 @@
-import React from "react";
-import Categories from "./Categories";
+import React, { useState } from "react";
+// import Categories from "./Categories";
 import Search from "./Search";
 import { Link, useParams } from "react-router-dom";
 import whatsapplogo from "../../assets/whatsapp-logo.svg";
 import Footer from "../Footer";
 
-const ProductView = ({ filter, setFilter, item }) => {
+const ProductView = ({ item }) => {
 	const params = useParams();
 	const testcall = item[params.id - 1];
-
 	// untuk list desc
 	const list = testcall.desc;
 
 	return (
 		<div>
 			<Search />
-			<Categories filter={filter} setFilter={setFilter}></Categories>
+			{/* <Categories></Categories> */}
 			{/* product view */}
 			<div className="product-detail ">
 				<div className="w-full flex h-[632px] justify-center gap-[26px]">
