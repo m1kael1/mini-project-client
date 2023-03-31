@@ -1,42 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import category from "../../data/category";
 import "../../styles/Categories.css";
 
-const Categories = ({ filter, setFilter }) => {
-	const category = [
-		{
-			brand: "cisco",
-			name: [
-				{ tag: "router", mark: "cscrouter" },
-				{ tag: "switch", mark: "cscswitch" },
-				{ tag: "server", mark: "cscserver" },
-			],
-		},
-		{
-			brand: "huawei",
-			name: [
-				{ tag: "router", mark: "hwrouter" },
-				{ tag: "switch", mark: "hwswitch" },
-				{ tag: "server", mark: "hwserver" },
-			],
-		},
-		{
-			brand: "juniper",
-			name: [
-				{ tag: "router", mark: "jprouter" },
-				{ tag: "switch", mark: "jpswitch" },
-				{ tag: "server", mark: "jpserver" },
-			],
-		},
-		{
-			brand: "hp",
-			name: [
-				{ tag: "router", mark: "hprouter" },
-				{ tag: "switch", mark: "hpswitch" },
-				{ tag: "server", mark: "hpserver" },
-			],
-		},
-	];
+const Categories = (props) => {
+	const [value, setValue] = useState("");
+
 	return (
 		<section className="w-full h-[227px] flex justify-center">
 			<div className="w-[1152px]">
@@ -53,15 +22,17 @@ const Categories = ({ filter, setFilter }) => {
 								<div className="w-[228px] h-[172px] submenu-con flex flex-col gap-[10px] justify-center items-center ">
 									{/* submenulist */}
 									{category.name.map((subcategory) => {
-										const value = subcategory.mark; // test get
+										const mark = subcategory.mark; // test get
 										const setFilter = () => {
-											console.log(value);
+											const value = mark;
+											setValue(value);
+											props.getValue(value);
 										};
 										return (
 											<button
-												key={value}
+												key={mark}
 												className="w-[198px] h-[44px] rounded-[8px] uppercase "
-												onClick={() => setFilter(value)}
+												onClick={() => setFilter(mark)}
 											>
 												{subcategory.tag}
 											</button>
