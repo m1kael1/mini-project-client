@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import CardProduct from "../CardProduct";
 import products from "../../data/products.js";
 import Categories from "./Categories";
-import ProductView from "./ProductView";
 
 const ProductSection = () => {
 	const [filter, setFilter] = useState("");
@@ -28,6 +27,17 @@ const ProductSection = () => {
 					))}
 				</div>
 			</section>
+			<Paginaniton />
+		</>
+	);
+};
+
+const Paginaniton = () => {
+	return (
+		<>
+			<div className="w-full flex justify-center mb-[30px]">
+				<div className="w-[76px] h-[21px]">Pagination</div>
+			</div>
 		</>
 	);
 };
