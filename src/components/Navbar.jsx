@@ -24,6 +24,7 @@ const Navbar = () => {
 						<NavLink
 							to="/product"
 							className="link-menu h-12 flex items-center justify-center font-normal text-white text-xs"
+							onClick={() => location.load()}
 						>
 							PRODUK
 						</NavLink>
