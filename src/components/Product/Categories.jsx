@@ -22,7 +22,8 @@ const Categories = (props) => {
 								<div className="w-[228px] h-[172px] submenu-con flex flex-col gap-[10px] justify-center items-center ">
 									{/* submenulist */}
 									{category.name.map((subcategory) => {
-										const mark = subcategory.mark; // test get
+										const mark = subcategory.mark;
+
 										const setFilter = () => {
 											const value = mark;
 											setValue(value);
@@ -32,7 +33,7 @@ const Categories = (props) => {
 											<button
 												key={mark}
 												className="w-[198px] h-[44px] rounded-[8px] uppercase "
-												onClick={() => setFilter(mark)}
+												onClick={() => setFilter()}
 											>
 												{subcategory.tag}
 											</button>
