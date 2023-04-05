@@ -12,7 +12,7 @@
 	border-radius: 15px;
 }
 
-input {
+.search-box input {
 	width: 692px;
 	height: 53px;
 	border-radius: 0 15px 15px 0;
