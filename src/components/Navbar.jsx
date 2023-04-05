@@ -5,7 +5,7 @@ import "../styles/Navbar.css";
 
 const Navbar = () => {
 	return (
-		<div className="bg-color container-nav w-full min-w-300 h-[72px] top-0 fixed left-0 flex items-center flex z-50 justify-center">
+		<div className="bg-color container-nav w-full min-w-300 h-[72px] top-0 fixed left-0 flex items-center flex z-[99999] justify-center">
 			<section className="min-w-300 w-[1385px] h-[62px] flex items-center justify-between">
 				<div className="h-full ml-10 flex justify-center items-center">
 					<img className="p-1" src={logo} alt="" />
