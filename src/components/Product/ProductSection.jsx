@@ -3,6 +3,7 @@ import CardProduct from "../CardProduct";
 import products from "../../data/products.js";
 import Categories from "./Categories";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { AiOutlineStop } from "react-icons/ai";
 
 const ProductSection = () => {
 	const [filter, setFilter] = useState("");
@@ -32,6 +33,13 @@ const ProductSection = () => {
 	const currentItems = filterData.slice(indexOfFirstItem, indexOfLastItem);
 	const totalItems = filterData.length;
 
+	const maxDisplayedPages = 5;
+	const startPage = Math.max(
+		1,
+		currentPage - Math.floor(maxDisplayedPages / 2)
+	);
+	const endPage = Math.min(totalPages, startPage + maxDisplayedPages - 1);
+
 	return (
 		<>
 			<Categories getValue={getValue}></Categories>
@@ -48,23 +56,27 @@ const ProductSection = () => {
 					disabled={currentPage === 1 || totalItems === 0}
 					className={`${
 						currentPage === 1 || totalItems === 0
-							? "opacity-50 cursor-not-allowed"
-							: "opacity-100 cursor-pointer"
+							? "opacity-100 bg-gray-200 text-red-500 cursor-not-allowed hover:bg-red-500 hover:text-white"
+							: "opacity-100 hover:bg-green-500 hover:text-white cursor-pointer"
 					} px-4 py-2 mx-1 rounded-md bg-gray-200 text-gray-700`}
 				>
-					<IoIosArrowBack />
+					{currentPage === 1 || totalItems === 0 ? (
+						<AiOutlineStop />
+					) : (
+						<IoIosArrowBack />
+					)}
 				</button>
-				{Array.from({ length: totalPages }, (_, index) => (
+				{Array.from({ length: endPage - startPage + 1 }, (_, index) => (
 					<button
-						key={index}
-						onClick={() => handlePageChange(index + 1)}
+						key={startPage + index}
+						onClick={() => handlePageChange(startPage + index)}
 						className={`${
-							currentPage === index + 1
+							currentPage === startPage + index
 								? "bg-green-500 text-white"
 								: "bg-gray-200 text-gray-700"
 						} px-4 py-2 mx-1 rounded-md`}
 					>
-						{index + 1}
+						{startPage + index}
 					</button>
 				))}
 				<button
@@ -72,11 +84,15 @@ const ProductSection = () => {
 					disabled={currentPage === totalPages || totalItems === 0}
 					className={`${
 						currentPage === totalPages || totalItems === 0
-							? "opacity-50 cursor-not-allowed"
-							: "opacity-100 cursor-pointer"
+							? "opacity-100 bg-gray-200 text-red-500 cursor-not-allowed hover:bg-red-500 hover:text-white"
+							: "opacity-100 hover:bg-green-500 hover:text-white cursor-pointer"
 					} px-4 py-2 mx-1 rounded-md bg-gray-200 text-gray-700`}
 				>
-					<IoIosArrowForward />
+					{currentPage === totalPages || totalItems === 0 ? (
+						<AiOutlineStop />
+					) : (
+						<IoIosArrowForward />
+					)}
 				</button>
 			</div>
 		</>
