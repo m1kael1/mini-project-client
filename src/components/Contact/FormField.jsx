@@ -8,18 +8,9 @@ const FormField = () => {
 	const [characterCount, setCharacterCount] = useState(0);
 
 	const country = [
-		{
-			name: "ID",
-			code: "+62",
-		},
-		{
-			name: "SG",
-			code: "+65",
-		},
-		{
-			name: "MY",
-			code: "+60",
-		},
+		{ name: "ID", code: "+62" },
+		{ name: "SG", code: "+65" },
+		{ name: "MY", code: "+60" },
 	];
 
 	useEffect(() => {
@@ -95,7 +86,6 @@ const FormField = () => {
 										))}
 									</ul>
 								</div>
-
 								<input
 									type="tel"
 									id="phone-number"
