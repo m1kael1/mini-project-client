@@ -15,7 +15,7 @@ const Home = () => {
 			<This></This>
 			<Counter></Counter>
 			<Quotes></Quotes>
-			<Footer></Footer>
+			{/* <Footer></Footer> */}
 		</div>
 	);
 };
