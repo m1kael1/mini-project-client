@@ -11,11 +11,12 @@
 
 .gradien-slide {
 	background: linear-gradient(90deg, #239d60 0%, rgba(97, 172, 100, 0) 100%);
-	width: 20px;
+	width: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
 	.quotes-section {
+		gap: 50px;
 	}
 
 	.quotes-section h1 {
@@ -23,10 +24,14 @@
 	}
 
 	.hide-scroll {
-		min-width: 300px;
-		max-width: 1152px;
-		width: 100%;
+		gap: 0;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
+	.gradien-slide {
+		width: 35px;
+	}
+
 	.gradien-slide {
 	}
 }
