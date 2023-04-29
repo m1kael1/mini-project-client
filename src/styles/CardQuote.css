@@ -1,13 +1,4 @@
-.con-card-quote {
-}
-.card-qoute-img {
-}
-.card-quote {
-}
-
 @media (max-width: 425px) {
-	.con-card-quote {
-	}
 	.card-quote {
 		width: 80%;
 		max-height: 391px;
