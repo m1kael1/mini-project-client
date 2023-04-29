@@ -1,6 +1,6 @@
 .this {
 	display: flex;
-	min-width: 300px;
+	/* min-width: 300px; */
 	justify-content: center;
 	width: 100%;
 	align-items: center;
@@ -15,7 +15,7 @@
 }
 
 .this-pict {
-	min-width: 300px;
+	/* min-width: 300px; */
 	max-width: 465px;
 	width: 100%;
 	height: auto;
@@ -31,7 +31,7 @@
 	flex-direction: column;
 	gap: 25px;
 	max-width: 560px;
-	min-width: 300px;
+	/* min-width: 300px; */
 	width: 100%;
 	height: auto;
 	padding: 0 0 30px 0;
@@ -44,7 +44,7 @@
 	letter-spacing: 0.07em;
 	display: flex;
 	justify-content: end;
-	min-width: 300px;
+	/* min-width: 300px; */
 }
 
 .this-text p {
@@ -52,7 +52,7 @@
 	width: 100%;
 }
 .this-container {
-	min-width: 300px;
+	/* min-width: 300px; */
 	width: 100%;
 	height: auto;
 	display: flex;

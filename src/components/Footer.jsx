@@ -12,7 +12,7 @@ const Footer = () => {
 				<div className="row-1">
 					<div className="logo2">
 						<img className="logo" src={logo} alt="" />
-						<p className="text-xl font-bold text-white">LOGO</p>
+						<p className="text-xl font-bold text-white">Logo</p>
 					</div>
 					<p className="textfooter">
 						Copyright reserved 2023 Link Data Technology
@@ -30,6 +30,7 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
+				<span className="line"></span>
 				<div className="row-2">
 					<div className="column-1">
 						<a href="">Whatsapp</a>
