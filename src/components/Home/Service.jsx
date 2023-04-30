@@ -44,12 +44,12 @@ const Service = () => {
 							</li>
 						</div>
 					</div>
-					<div className="img-1">
+					<div className="img-con">
 						<img src={feat1} alt="" />
 					</div>
 				</div>
 				<div className="feat-2">
-					<div className="img-2">
+					<div className="img-con">
 						<img src={feat2} alt="" />
 					</div>
 					<div className="frame-9">
@@ -66,20 +66,21 @@ const Service = () => {
 								reguler untuk memastikan operasional perangkat Anda selalu
 								optimal.
 							</p>
-						</div>
-						<div className="frame-7">
-							<li className="mc">
-								<FaCheck />
-								Murah dan Cepat
-							</li>
-							<li className="at">
-								<FaCheck />
-								Aman dan Terpercaya
-							</li>
-							<li className="kb">
-								<FaCheck />
-								Kondisi Barang Bagus
-							</li>
+
+							<div className="frame-7">
+								<li className="mc">
+									<FaCheck />
+									Murah dan Cepat
+								</li>
+								<li className="at">
+									<FaCheck />
+									Aman dan Terpercaya
+								</li>
+								<li className="kb">
+									<FaCheck />
+									Kondisi Barang Bagus
+								</li>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -111,7 +112,7 @@ const Service = () => {
 							</div>
 						</div>
 					</div>
-					<div className="img-3">
+					<div className="img-con">
 						<img src={feat3} alt="" />
 					</div>
 				</div>
