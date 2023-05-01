@@ -6,9 +6,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
 	const [showNav, setShowNav] = useState(false);
-
-	console.log(showNav);
-
 	return (
 		<nav className=" bg-color container-nav w-full min-w-300 h-[72px] top-0 fixed left-0 flex items-center flex z-[99999] justify-center">
 			<section className="min-w-300 w-[1385px] h-[62px] flex items-center justify-between">
