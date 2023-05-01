@@ -30,3 +30,72 @@
 	background: #a3de83;
 	color: black;
 }
+@media (max-width: 768px) {
+	.categories-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		background-color: black;
+		z-index: 99999;
+		padding: 0;
+		width: 300px;
+		transition: all 0.8s;
+	}
+	.menu-brand {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		flex-direction: column;
+		height: auto;
+		color: #ffffff;
+		gap: 30px;
+	}
+	.submenu-con {
+		position: relative;
+		transition: all 0.3s ease-in-out;
+		width: 100%;
+		height: auto;
+		max-width: 295px;
+		border-radius: 0;
+		background-color: black;
+		padding-left: 65px;
+	}
+	.submenu-con button {
+		display: flex;
+		justify-content: start;
+		width: 100%;
+		align-items: center;
+		font-family: poppins;
+		font-size: 14px;
+		letter-spacing: 0.22em;
+		color: #ffffff;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		max-width: none;
+		border-radius: 0;
+		padding-left: 10px;
+	}
+
+	.submenu-con button:hover {
+		background: rgba(255, 255, 255, 0.4);
+		color: #ffffff;
+	}
+
+	.h-btncategories {
+		max-width: 300px;
+		width: 100%;
+	}
+
+	.label-categories {
+		min-width: 300px;
+		padding: 0 10px;
+		width: 100%;
+		font-size: 16px;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: solid 1px #ffffff;
+	}
+}
