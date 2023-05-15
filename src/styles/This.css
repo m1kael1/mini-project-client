@@ -1,23 +1,24 @@
 .this {
 	display: flex;
-	min-width: 300px;
+	/* min-width: 300px; */
 	justify-content: center;
 	width: 100%;
 	align-items: center;
-	height: 465px;
-	gap: 127px;
-	padding: 40px 0px;
+	height: auto;
+	padding: 40px 40px;
+	margin-bottom: 2rem;
 }
 
 .this-pict img {
-	width: 464px;
-	height: 386px;
+	width: 100%;
+	height: auto;
 }
 
 .this-pict {
-	min-width: 464px;
-	width: 464px;
-	height: 386px;
+	/* min-width: 300px; */
+	max-width: 465px;
+	width: 100%;
+	height: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -26,12 +27,14 @@
 .this-text {
 	display: flex;
 	font-family: "poppins", sans-serif;
-	min-width: 300px;
 	text-align: justify;
 	flex-direction: column;
 	gap: 25px;
-	width: 560px;
-	height: 350px;
+	max-width: 560px;
+	/* min-width: 300px; */
+	width: 100%;
+	height: auto;
+	padding: 0 0 30px 0;
 }
 
 .this-text h1 {
@@ -41,19 +44,51 @@
 	letter-spacing: 0.07em;
 	display: flex;
 	justify-content: end;
-	min-width: 380px;
+	/* min-width: 300px; */
 }
 
 .this-text p {
-	height: 289px;
-	width: 560px;
-	min-width: 300px;
+	height: auto;
+	width: 100%;
 }
 .this-container {
-	min-width: 300px;
-	width: 1152px;
-	height: 386px;
+	/* min-width: 300px; */
+	width: 100%;
+	height: auto;
 	display: flex;
-	gap: 127px;
 	align-items: center;
+	justify-content: center;
+	gap: 100px;
+}
+
+@media (max-width: 768px) {
+	.this {
+		max-width: 768px;
+		width: 100%;
+		padding: 0 20px 20px 20px;
+		gap: 10px;
+		height: auto;
+	}
+	.this-container {
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		gap: 20px;
+	}
+
+	.this-text {
+		max-width: 768px;
+		width: 100%;
+		height: auto;
+	}
+	.this-text h1 {
+		font-size: 18px;
+		justify-content: center;
+	}
+	.this-text p {
+		max-width: 768px;
+		width: 100%;
+		height: auto;
+		font-size: 12px;
+	}
 }

@@ -1,22 +1,26 @@
 .service-con {
 	width: 100%;
-	height: 2068px;
+	min-height: 2068px;
+	height: auto;
 	display: flex;
 	justify-content: center;
-	padding: 168px 0 0 0;
+	padding: 168px 0 20px 20px;
 	margin-bottom: 95px;
 	gap: 161px;
 }
 .tawaran {
 	display: flex;
-	width: 1149px;
+	width: 100%;
+	height: auto;
+	max-width: 1149px;
 	flex-direction: column;
 	gap: 160px;
 }
 .tawaran h2 {
 	text-align: center;
-	height: 36px;
-	width: 520px;
+	height: auto;
+	width: 100%;
+	max-width: 520px;
 	font-family: "Poppins", sans-serif;
 	font-style: normal;
 	font-weight: 700;
@@ -34,7 +38,8 @@
 	gap: 20px;
 }
 .garis {
-	width: 306px;
+	max-width: 306px;
+	width: 100%;
 	height: 0px;
 	border: 3px solid #212125;
 	border-radius: 20px;
@@ -44,16 +49,19 @@
 	flex-direction: row;
 	align-items: flex-start;
 	padding: 0px;
-	gap: 156px;
-	width: 1149px;
-	height: 437px;
+	gap: 180px;
+	width: 100%;
+	min-height: 437px;
+	height: auto;
 	flex: none;
 	order: 1;
 	flex-grow: 0;
 }
 .frame-6 {
-	width: 405px;
-	height: 437px;
+	width: 100%;
+	max-width: 405px;
+	min-height: 437px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -71,8 +79,10 @@
 	gap: 100px;
 }
 .frame-6 p {
-	width: 405px;
-	height: 210px;
+	max-width: 405px;
+	width: 100%;
+	min-height: 210px;
+	height: 100%;
 	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 400;
@@ -87,10 +97,16 @@
 	padding: 0px;
 	gap: 20px;
 }
-.img-1 {
-	width: 564px;
-	height: 421px;
-	border-radius: 20px;
+.img-con {
+	max-width: 564px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 421px;
+}
+img {
+	object-fit: fill;
 }
 .frame-4 {
 	display: flex;
@@ -98,7 +114,8 @@
 	align-items: flex-start;
 	padding: 0px;
 	gap: 20px;
-	width: 255px;
+	max-width: 255px;
+	width: 100%;
 	height: 142px;
 }
 .mc {
@@ -170,8 +187,9 @@
 	align-items: flex-start;
 	padding: 0px;
 	gap: 180px;
-	width: 1149px;
-	height: 479px;
+	width: 100%;
+	min-height: 479px;
+	height: auto;
 	flex: none;
 	order: 2;
 	flex-grow: 0;
@@ -183,8 +201,10 @@
 	align-items: flex-start;
 	padding: 0px;
 	gap: 40px;
-	width: 405px;
-	height: 479px;
+	max-width: 405px;
+	width: 100%;
+	min-height: 479px;
+	height: auto;
 	flex: none;
 	order: 1;
 	flex-grow: 0;
@@ -195,14 +215,17 @@
 	align-items: flex-start;
 	padding: 0px;
 	gap: 20px;
-	width: 405px;
-	height: 297px;
+	max-width: 405px;
+	width: 100%;
+	min-height: 297px;
+	height: auto;
 	flex: none;
 	order: 0;
 	flex-grow: 0;
 }
 .frame-8 h3 {
-	width: 236px;
+	max-width: 236px;
+	width: 100%;
 	height: 25px;
 	font-family: "Poppins";
 	font-style: normal;
@@ -216,8 +239,10 @@
 	flex-grow: 0;
 }
 .frame-8 p {
-	width: 405px;
-	height: 252px;
+	max-width: 405px;
+	width: 100%;
+	min-height: 210px;
+	height: auto;
 	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 400;
@@ -234,8 +259,10 @@
 	align-items: flex-start;
 	padding: 0px;
 	gap: 20px;
-	width: 255px;
-	height: 142px;
+	max-width: 255px;
+	width: 100%;
+	min-height: 142px;
+	height: auto;
 	flex: none;
 	order: 1;
 	flex-grow: 0;
@@ -246,7 +273,7 @@
 	align-items: flex-start;
 	padding: 0px;
 	gap: 180px;
-	width: 1149px;
+	width: 100%;
 	height: 421px;
 	order: 3;
 	flex-grow: 0;
@@ -257,7 +284,8 @@
 	align-items: flex-start;
 	padding: 0px;
 	gap: 40px;
-	width: 405px;
+	max-width: 405px;
+	width: 100%;
 	height: 416px;
 	flex: none;
 	order: 0;
@@ -274,8 +302,10 @@
 	gap: 100px;
 }
 .frame-12 p {
-	width: 405px;
-	height: 210px;
+	max-width: 405px;
+	width: 100%;
+	min-height: 210px;
+	height: 100%;
 	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 400;
@@ -304,6 +334,52 @@
 	align-items: flex-start;
 	padding: 0px;
 	gap: 20px;
-	width: 255px;
+	max-width: 255px;
+	width: 100%;
 	height: 142px;
+}
+
+@media (max-width: 768px) {
+	.service-con .img-con {
+		display: none;
+	}
+	.service-con {
+		display: flex;
+		justify-content: center;
+		padding: 128px 20px 0 20px;
+		min-height: 1500px;
+		height: auto;
+	}
+	.feat-1,
+	.feat-2,
+	.feat-3 {
+		display: flex;
+		justify-content: center;
+	}
+	.feat-1 {
+		margin-top: 50px;
+	}
+
+	.title h2 {
+		font-size: 16px;
+	}
+
+	.service-con h3 {
+		font-size: 14px;
+	}
+
+	.service-con p {
+		font-size: 12px;
+		min-height: 144px;
+	}
+
+	.tawaran {
+		gap: 0;
+		height: 100vh;
+	}
+
+	.frame-6,
+	.frame-9.frame-12 {
+		gap: 40px;
+	}
 }

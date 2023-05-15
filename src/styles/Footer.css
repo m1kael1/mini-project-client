@@ -1,221 +1,151 @@
-.Footer{
-    /* footer-section */
-    
-    
-    /* Auto layout */
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 104px 0px;
-    gap: 10px;
-    
-    width: auto;
-    height: 400px;
-    
-    background: #212125;
+.Footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 439px;
+	background: #212125;
 }
-.Footer-Container{
-/* footer-container */
-
-
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 42px;
-    gap: 30px;
-
-    width: 1152px;
-    height: 247px;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.Footer-Container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 1152px;
+	width: 100%;
+	height: 247px;
+	margin: 0 20px;
 }
 
-.row-1{
-    /* Auto layout */
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    gap: 51px;
-    padding-bottom: 36px;
-    
-    width: 1152px;
-    height: 36px;
-    
-    /*border*/
-    border-bottom: 1px solid #FFFFFF;
-        
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-    
+.row-1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 51px;
+	width: 100%;
+	min-height: 56px;
+	flex-wrap: wrap;
 }
-.logo2{
-    /* logo2 */
-    
-    
-    /* Auto layout */
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 5px;
-    
-    width: 94px;
-    height: 36px;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.logo2 {
+	display: flex;
+	gap: 5px;
+	width: 94px;
+	height: 36px;
+	justify-content: center;
+	align-items: center;
+	font-family: "Poppins";
 }
-.textfooter{
-    /* Copyright reserved 2023 Link Data Technology */
-
-
-    width: auto;
-    height: 21px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
-    color: #FFFFFF;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+.textfooter {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #ffffff;
+	text-align: center;
+	/* min-width: 300px; */
 }
-.social-media-links{
-    /* social-media-links */
-    
-    
-        /* Auto layout */
-    
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 26px;
-    
-    width: 90px;
-    height: 32px;
-    
-    
-        /* Inside auto layout */
-    
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+.social-media-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 26px;
+	width: 90px;
+	height: 32px;
+}
+.social-media-links .whatsapp,
+.social-media-links .tokopedia {
+	width: 32px;
+	height: 32px;
+}
+.line {
+	width: 100%;
+	height: 1px;
+	background-color: #ffffff;
+}
+.row-2 {
+	display: flex;
+	align-items: flex-start;
+	gap: 24px;
+	width: 100%;
+	height: 111px;
 }
 
-.row-2{
-    /* row 2 */
-    
-    
-    /* Auto layout */
-    
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-    
-    width: 1152px;
-    height: 111px;
-    
-    
-        /* Inside auto layout */
-    
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
+.column-1 {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	max-width: 270px;
+	width: 100%;
+	height: 111px;
 }
 
-.column-1{
-/* Auto layout */
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
-
-    width: 270px;
-    height: 111px;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.column-1 a {
+	width: 100%;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 50px;
+	font-size: 16px;
+	text-decoration-line: underline;
+	color: #ffffff;
 }
 
-.column-1 a{
-    width: 270px;
-    height: 21px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 50px;
-    font-size: 16px;
-    line-height: 130%;
-    text-decoration-line: underline;
-    /* identical to box height, or 21px */
-    
-    
-    color: #FFFFFF;
-}
+.column-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 
-.column-2{
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
-    
-    width: 270px;
-    height: 111px;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+	max-width: 270px;
+	width: 100%;
+	height: 111px;
 }
 .column-2 a {
-    width: 270px;
-    height: 21px;
+	width: 100%;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 50px;
+	font-size: 16px;
+	text-decoration-line: underline;
+	color: #ffffff;
+}
 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 50px;
-    font-size: 16px;
-    line-height: 130%;
-    text-decoration-line: underline;
-    /* identical to box height, or 21px */
+@media (max-width: 768px) {
+	.Footer {
+		height: 665px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.Footer-Container {
+		margin: 40px 0;
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		justify-content: start;
+		gap: 40px;
+	}
+	.row-1,
+	.row-2 {
+		display: flex;
+		flex-direction: column;
+		gap: 51px;
+		height: auto;
+	}
+	.row-2 {
+		gap: 24px;
+	}
+	.column-1,
+	.column-2 {
+		max-width: 100%;
+		align-items: center;
+		justify-content: center;
+		gap: 24px;
+	}
 
-
-    color: #FFFFFF;
+	.column-1 a,
+	.column-2 a {
+		width: auto;
+	}
+	.textfooter {
+		font-size: 14px;
+	}
 }

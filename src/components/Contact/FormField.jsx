@@ -24,8 +24,8 @@ const FormField = () => {
 
 	return (
 		<>
-			<section className="w-full flex justify-center pb-52 ">
-				<form className="mt-28 w-[564px]">
+			<section className="w-full flex justify-center pb-52 pl-4 pr-4">
+				<form className="mt-28 max-w-[564px] w-full">
 					<div className="flex flex-col gap-14">
 						<div className="flex flex-col gap-3">
 							<label
@@ -61,19 +61,19 @@ const FormField = () => {
 								Nomor Handphone
 							</label>
 							<div className="flex gap-6">
-								<div className="cont-country w-32 relative z-[9999]">
+								<div className="cont-country w-32  relative z-[9999]">
 									<div className="select-country relative">
 										<FiChevronDown className="icon absolute z-[9999] top-[16px] right-[10px]" />
 										<div
 											id="country"
 											name="country"
-											className="h-12 w-full flex items-center justify-center bg-white font-['poppins'] tracking-[0.07em] focus:outline-none rounded-lg text-center drop-shadow-[0_0_5px_rgba(0,0,0,0.25)]"
+											className="h-12 min-w-[92px] w-full flex items-center justify-center bg-white font-['poppins'] tracking-[0.07em] focus:outline-none rounded-lg text-center drop-shadow-[0_0_5px_rgba(0,0,0,0.25)]"
 											value={selectedCountry}
 										>
 											{selectedCountry}
 										</div>
 									</div>
-									<ul className="absolute  w-32 z-[999] list-country overflow-hidden drop-shadow-[0_0_5px_rgba(0,0,0,0.25)]  rounded-lg">
+									<ul className="absolute  max-w-32 w-full z-[999] list-country overflow-hidden drop-shadow-[0_0_5px_rgba(0,0,0,0.25)]  rounded-lg">
 										{country.map((item) => (
 											<li
 												key={item.code}
@@ -90,7 +90,7 @@ const FormField = () => {
 									type="tel"
 									id="phone-number"
 									name="phone-number"
-									className="h-12 font-['poppins'] tracking-[0.07em] focus:outline-none rounded-lg pl-6 drop-shadow-[0_0_5px_rgba(0,0,0,0.25)]"
+									className="h-12 max-w-[225px] w-full font-['poppins'] tracking-[0.07em] focus:outline-none rounded-lg pl-6 drop-shadow-[0_0_5px_rgba(0,0,0,0.25)]"
 									placeholder="082XXXX"
 								/>
 							</div>

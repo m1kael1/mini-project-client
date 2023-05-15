@@ -8,3 +8,31 @@
 .bg-color {
 	background: rgba(35, 157, 96, 0.6);
 }
+@media (max-width: 768px) {
+	nav .logo {
+		margin-left: 20px;
+	}
+	nav .list-nav {
+		position: fixed;
+		flex-direction: column;
+		width: 300px;
+		background-color: #239d60;
+		top: 0;
+		margin: 0;
+		justify-content: start;
+		transition: all 0.8s;
+	}
+	nav ul li {
+		margin-top: 48px;
+		width: 100%;
+		border-bottom: 2px;
+		height: 48px;
+		border-bottom: solid white 1px;
+	}
+}
+
+@media (min-width: 769px) {
+	nav .nav-icon {
+		display: none;
+	}
+}

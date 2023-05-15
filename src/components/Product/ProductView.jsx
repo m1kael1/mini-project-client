@@ -17,42 +17,17 @@ const ProductView = ({ item }) => {
 			{/* <Categories></Categories> */}
 			{/* product view */}
 			<div className="product-detail ">
-				<div className="w-full flex h-[632px] justify-center gap-[26px]">
+				<div className="w-full flex h-auto justify-center gap-[26px]">
 					<div className="img-view flex flex-col gap-[29px] h-[612px] ">
-						<div className="w-[562px] h-[515px] border-solid border-[1px] rounded-[15px] border-#9A9A9A flex justify-center overflow-hidden">
+						<div className="max-w-[562px] w-full h-[515px] border-solid border-[1px] rounded-[15px] border-#9A9A9A flex justify-center overflow-hidden">
 							<img
-								className="object-cover "
+								className="object-contain "
 								src={testcall.img}
 								alt={testcall.name}
 							/>
 						</div>
-						{/* 3img */}
-						<div className="flex gap-[24px] w-full">
-							<div className="w-[74px] h-[68px] border-solid border-[1px] rounded-[15px]  flex justify-center overflow-hidden border-#9A9A9A">
-								<img
-									className="object-cover "
-									src={testcall.img}
-									alt={testcall.name}
-								/>
-							</div>
-							<div className="w-[74px] h-[68px] border-solid border-[1px] rounded-[15px] border-#9A9A9A flex justify-center overflow-hidden">
-								<img
-									className="object-cover "
-									src={testcall.img}
-									alt={testcall.name}
-								/>
-							</div>
-							<div className="w-[74px] h-[68px] border-solid border-[1px] rounded-[15px] border-#9A9A9A flex justify-center overflow-hidden">
-								<img
-									className="object-cover "
-									src={testcall.img}
-									alt={testcall.name}
-								/>
-							</div>
-						</div>
-						{/*  */}
 					</div>
-					<div className="flex flex-col h-[400px] justify-between">
+					<div className="flex flex-col h-auto gap-12">
 						<h1 className="uppercase text-[34px] font-['poppins'] tracking-[0.07em] ">
 							{testcall.name}
 						</h1>

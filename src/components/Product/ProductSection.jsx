@@ -8,7 +8,7 @@ import { AiOutlineStop } from "react-icons/ai";
 const ProductSection = () => {
 	const [filter, setFilter] = useState("");
 	const [currentPage, setCurrentPage] = useState(1);
-	const [itemsPerPage, setItemsPerPage] = useState(12);
+	const [itemsPerPage, setItemsPerPage] = useState(8);
 
 	const getValue = (value) => {
 		setFilter(value);
@@ -43,14 +43,14 @@ const ProductSection = () => {
 	return (
 		<>
 			<Categories getValue={getValue}></Categories>
-			<section className="product-section w-full h-auto flex justify-center">
-				<div className="container-product-section w-[1152px] flex gap-[24px] flex-wrap gap-y-[65px] mb-[84px]">
+			<section className="product-section w-full h-auto flex justify-center items-center pr-4 pl-4">
+				<div className="container-product-section max-w-[1152px] justify-center flex  gap-[24px] flex-wrap gap-y-[65px] mb-[84px]">
 					{currentItems.map((product) => (
 						<CardProduct key={product.id} item={product} />
 					))}
 				</div>
 			</section>
-			<div className="w-full flex justify-center mb-[30px]">
+			<div className="w-full flex justify-center mb-[30px] flex-wrap gap-2">
 				<button
 					onClick={() => handlePageChange(currentPage - 1)}
 					disabled={currentPage === 1 || totalItems === 0}
