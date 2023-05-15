@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import { FaTimes } from "react-icons/fa";
+import { IoFilter } from "react-icons/io5";
 import category from "../../data/category";
 import "../../styles/Categories.css";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 const Categories = (props) => {
 	const [value, setValue] = useState("");
@@ -12,9 +13,12 @@ const Categories = (props) => {
 
 	return (
 		<>
-			<div className=" pr-10 w-full min-[769px]:hidden flex justify-center center mb-16 ">
-				<div className="min-[769px] max-w-[768px] w-full justify-end flex ">
-					<FaBars onClick={() => setShowCategories(true)} />
+			<div className=" pr-8 w-full min-[769px]:hidden flex justify-center center mb-16 ">
+				<div className="min-[769px] max-w-[768px] w-full justify-end  flex ">
+					<IoFilter
+						className="text-[20px]"
+						onClick={() => setShowCategories(true)}
+					/>
 				</div>
 			</div>
 			<section

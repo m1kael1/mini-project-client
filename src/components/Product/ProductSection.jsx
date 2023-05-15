@@ -8,7 +8,7 @@ import { AiOutlineStop } from "react-icons/ai";
 const ProductSection = () => {
 	const [filter, setFilter] = useState("");
 	const [currentPage, setCurrentPage] = useState(1);
-	const [itemsPerPage, setItemsPerPage] = useState(12);
+	const [itemsPerPage, setItemsPerPage] = useState(8);
 
 	const getValue = (value) => {
 		setFilter(value);
