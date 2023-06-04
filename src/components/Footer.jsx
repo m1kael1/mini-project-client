@@ -3,7 +3,7 @@ import "../styles/Footer.css";
 import logo from "../assets/logo.svg";
 import whatsapp from "../assets/whatsapp.svg";
 import tokopedia from "../assets/tokopedia.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -19,28 +19,44 @@ const Footer = () => {
 					</p>
 					<div className="social-media-links">
 						<div className="tokopedia">
-							<a href="">
+							<Link
+								className="link-footer"
+								to="https://www.tokopedia.com/"
+								target="_blank"
+							>
 								<img className="tokped" src={tokopedia} alt="" />
-							</a>
+							</Link>
 						</div>
 						<div className="whatsapp">
-							<a href="">
+							<Link className="link-footer" to="">
 								<img className="wa" src={whatsapp} alt="" />
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>
 				<span className="line"></span>
 				<div className="row-2">
 					<div className="column-1">
-						<a href="">Whatsapp</a>
-						<a href="">Tokopedia</a>
-						<a href="">Gmail</a>
+						<Link className="link-footer" to="">
+							Whatsapp
+						</Link>
+						<Link className="link-footer" to="">
+							Tokopedia
+						</Link>
+						<Link className="link-footer" to="">
+							Gmail
+						</Link>
 					</div>
 					<div className="column-2">
-						<NavLink to="/about">Tentang Kami</NavLink>
-						<a href="">Contact</a>
-						<a href="">Product</a>
+						<NavLink className="link-footer" to="/about">
+							Tentang Kami
+						</NavLink>
+						<Link className="link-footer" to="">
+							Contact
+						</Link>
+						<NavLink className="link-footer" to="/product">
+							Product
+						</NavLink>
 					</div>
 				</div>
 			</div>

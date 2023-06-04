@@ -8,9 +8,6 @@ import "../../styles/Categories.css";
 const Categories = (props) => {
 	const [value, setValue] = useState("");
 	const [showCategories, setShowCategories] = useState(false);
-
-	console.log(showCategories);
-
 	return (
 		<>
 			<div className=" pr-8 w-full min-[769px]:hidden flex justify-center center mb-16 ">

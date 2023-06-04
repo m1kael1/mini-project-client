@@ -4,8 +4,29 @@ import { FiChevronDown } from "react-icons/fi";
 
 const FormField = () => {
 	const [selectedCountry, setSelectedCountry] = useState("+62");
-	const [inputText, setInputText] = useState("");
+	const [selectedCountryName, setSelectedCountryName] = useState("ID");
 	const [characterCount, setCharacterCount] = useState(0);
+	const [name, setName] = useState(null);
+	const [email, setEmail] = useState(null);
+	const [phoneNumber, setPhoneNumber] = useState(null);
+	const [massage, setMassage] = useState("");
+
+	function handleContact(e) {
+		if (name === null) {
+			alert("Masukkan Nama Anda");
+		} else if (email === null) {
+			alert("Masukkan Email Anda");
+		} else if (massage === "") {
+			alert("Masukkan Pesan Anda");
+		} else {
+			e.preventDefault();
+			console.log(`name : ${name}`);
+			console.log(`email : ${email}`);
+			console.log(`phoneNumber : ${phoneNumber}`);
+			console.log(`country : ${selectedCountryName}`);
+			console.log(`massage : ${massage}`);
+		}
+	}
 
 	const country = [
 		{ name: "ID", code: "+62" },
@@ -14,12 +35,12 @@ const FormField = () => {
 	];
 
 	useEffect(() => {
-		setCharacterCount(inputText.length);
-	}, [inputText]);
+		setCharacterCount(massage.length);
+	}, [massage]);
 
-	const handleCountryChange = (e) => {
+	const handleCountryChange = (e, f) => {
 		setSelectedCountry(e);
-		console.log(e);
+		setSelectedCountryName(f);
 	};
 
 	return (
@@ -36,6 +57,8 @@ const FormField = () => {
 							</label>
 							<input
 								type="text"
+								id="name"
+								onChange={(e) => setName(e.target.value)}
 								className="h-12 font-['poppins'] tracking-[0.07em] focus:outline-none rounded-lg pl-6 drop-shadow-[0_0_5px_rgba(0,0,0,0.25)]"
 								placeholder="Jhon Doe"
 							/>
@@ -49,6 +72,8 @@ const FormField = () => {
 							</label>
 							<input
 								type="text"
+								id="email"
+								onChange={(e) => setEmail(e.target.value)}
 								className="h-12 font-['poppins'] tracking-[0.07em] focus:outline-none rounded-lg pl-6 drop-shadow-[0_0_5px_rgba(0,0,0,0.25)]"
 								placeholder="jhon.doe@example"
 							/>
@@ -79,7 +104,10 @@ const FormField = () => {
 												key={item.code}
 												className="w-full flex items-center justify-center h-8 bg-[#f8f8f8] hover:bg-gray-400  hover:text-white  font-['poppins'] tracking-[0.07em]"
 												value={item.name}
-												onClick={() => handleCountryChange(item.code)}
+												id="country"
+												onClick={(e) =>
+													handleCountryChange(item.code, item.name)
+												}
 											>
 												{item.code}
 											</li>
@@ -90,6 +118,7 @@ const FormField = () => {
 									type="tel"
 									id="phone-number"
 									name="phone-number"
+									onChange={(e) => setPhoneNumber(e.target.value)}
 									className="h-12 max-w-[225px] w-full font-['poppins'] tracking-[0.07em] focus:outline-none rounded-lg pl-6 drop-shadow-[0_0_5px_rgba(0,0,0,0.25)]"
 									placeholder="082XXXX"
 								/>
@@ -103,10 +132,10 @@ const FormField = () => {
 								Pesan
 							</label>
 							<textarea
-								value={inputText}
-								onChange={(event) => setInputText(event.target.value)}
-								name="Pesan"
-								id=""
+								value={massage}
+								id="massage"
+								onChange={(event) => setMassage(event.target.value)}
+								name="massage"
 								cols="2"
 								rows="2"
 								className="h-56 font-['poppins'] tracking-[0.07em] focus:outline-none rounded-lg pl-6 drop-shadow-[0_0_5px_rgba(0,0,0,0.25)] placeholder:absolute pt-4 pr-4 resize-none "
@@ -119,9 +148,12 @@ const FormField = () => {
 						</div>
 					</div>
 					<div>
-						<button className="mt-24 font-['poppins'] tracking-[0.07em] text-xl bg-[#A3DE83] w-full  h-16 rounded-lg drop-shadow-[0_0_5px_rgba(0,0,0,0.25)]">
+						<div
+							onClick={handleContact}
+							className="mt-24 font-['poppins']  text-center tracking-[0.07em] text-xl bg-[#A3DE83] w-full  py-4 rounded-lg drop-shadow-[0_0_5px_rgba(0,0,0,0.25)] cursor-pointer"
+						>
 							Kirimkan Pesan Anda
-						</button>
+						</div>
 					</div>
 				</form>
 			</section>
