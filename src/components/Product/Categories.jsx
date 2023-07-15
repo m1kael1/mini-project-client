@@ -6,8 +6,25 @@ import category from "../../data/category";
 import "../../styles/Categories.css";
 
 const Categories = (props) => {
-	const [value, setValue] = useState("");
+	const [value, setValue] = useState(null);
 	const [showCategories, setShowCategories] = useState(false);
+
+	function findBrandAndTagByMark(mark) {
+		const foundItems = category.map((item) => {
+			const nameItem = item.name.find((nameObj) => nameObj.mark === mark);
+			if (nameItem) {
+				return { brand: item.brand, tag: nameItem.tag };
+			}
+			return null;
+		});
+
+		const result = foundItems.find((item) => item !== null);
+		return result || null;
+	}
+
+	const markToFind = value;
+	const result = findBrandAndTagByMark(markToFind);
+
 	return (
 		<>
 			<div className=" pr-8 w-full min-[769px]:hidden flex justify-center center mb-16 ">
@@ -19,10 +36,17 @@ const Categories = (props) => {
 				</div>
 			</div>
 			<section
-				className={`categories-container max-[768px]:hidden w-full h-[227px] flex justify-center pl-16 pr-16 ${
+				className={`categories-container max-[768px]:hidden w-full h-[227px] flex flex-col items-center pl-16 pr-16 ${
 					showCategories ? "right-0" : "right-[-300px]"
 				}`}
 			>
+				<div className="max-w-[1152px] w-full  mb-8 text-[24px]  font-['poppins'] ">
+					Mencari :{" "}
+					<span className="text-[#1170FF] capitalize">{result?.brand}</span> /{" "}
+					<span className="text-[#1170FF] capitalize">{result?.tag}</span>
+					<hr className="mt-[15px]" />
+				</div>
+
 				<div className=" min-[769px]:hidden pr-4 pt-10 w-full flex justify-center center mb-5 ">
 					<div className="max-w-[768px] w-full justify-end flex ">
 						<FaTimes
@@ -32,7 +56,7 @@ const Categories = (props) => {
 					</div>
 				</div>
 				<div className="max-w-[1152px] w-full">
-					<div className="menu-brand flex flex-wrap gap-[80px] mb-[30px] ">
+					<div className="menu-brand flex flex-wrap gap-[80px] mb-[15px] ">
 						{category.map((category, index) => (
 							<div key={index} className="h-btncategories">
 								{/* menutitle */}
