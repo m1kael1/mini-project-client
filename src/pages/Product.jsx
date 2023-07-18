@@ -5,11 +5,11 @@ import Footer from "../components/Footer";
 
 const Product = () => {
 	return (
-		<>
+		<div>
 			<Search></Search>
 			<ProductSection></ProductSection>
 			<Footer></Footer>
-		</>
+		</div>
 	);
 };
 
