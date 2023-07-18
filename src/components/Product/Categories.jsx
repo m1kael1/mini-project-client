@@ -25,15 +25,14 @@ const Categories = (props) => {
 	const markToFind = value;
 	const result = findBrandAndTagByMark(markToFind);
 
-	const handleFilterClick = () => {
-		setShowCategories((prevShowCategories) => !prevShowCategories);
-	};
-
 	return (
 		<div>
 			<div className="pr-8 w-full min-[769px]:hidden flex justify-center center mb-16">
 				<div className="min-[769px] max-w-[768px] w-full justify-end flex">
-					<IoFilter className="text-[20px]" onClick={handleFilterClick} />
+					<IoFilter
+						className="text-[20px]"
+						onClick={() => setShowCategories(true)}
+					/>
 				</div>
 			</div>
 			<section
