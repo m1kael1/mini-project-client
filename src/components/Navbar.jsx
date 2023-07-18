@@ -9,10 +9,13 @@ const Navbar = () => {
 	return (
 		<nav className=" bg-color container-nav w-full min-w-300 h-[72px] top-0 fixed left-0 items-center flex z-[99999] justify-center">
 			<section className="min-w-300 w-[1385px] h-[62px] flex items-center justify-between">
-				<div className="logo h-full ml-10 flex justify-center items-center">
+				<NavLink
+					to="/"
+					className="logo h-full ml-10 flex justify-center items-center"
+				>
 					<img className="p-1" src={logo} alt="" />
 					<p className="text-xl font-bold text-white">LOGO</p>
-				</div>
+				</NavLink>
 				<div className="nav-icon" onClick={() => setShowNav(true)}>
 					<FaBars className="mr-8 text-white" />
 				</div>
