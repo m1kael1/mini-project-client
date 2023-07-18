@@ -34,7 +34,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: start;
-		height: 100vh;
+		height: 100%;
 		position: fixed;
 		top: 0;
 		background-color: black;
@@ -42,6 +42,7 @@
 		padding: 0;
 		width: 300px;
 		transition: all 0.8s;
+		padding: 0 8px;
 	}
 	.menu-brand {
 		display: flex;
