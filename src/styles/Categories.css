@@ -30,11 +30,10 @@
 	color: black;
 }
 @media (max-width: 768px) {
-	.categories-container {
+	div .categories-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: start;
-		height: 100%;
 		position: fixed;
 		top: 0;
 		background-color: black;
@@ -43,6 +42,7 @@
 		width: 300px;
 		transition: all 0.8s;
 		padding: 0 8px;
+		height: 100vh;
 	}
 	.menu-brand {
 		display: flex;
