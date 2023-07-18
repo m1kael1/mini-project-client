@@ -25,14 +25,15 @@ const Categories = (props) => {
 	const markToFind = value;
 	const result = findBrandAndTagByMark(markToFind);
 
+	const handleFilterClick = () => {
+		setShowCategories((prevShowCategories) => !prevShowCategories);
+	};
+
 	return (
 		<div>
-			<div className=" pr-8 w-full min-[769px]:hidden flex justify-center center mb-16 ">
-				<div className="min-[769px] max-w-[768px] w-full justify-end  flex ">
-					<IoFilter
-						className="text-[20px]"
-						onClick={() => setShowCategories(true)}
-					/>
+			<div className="pr-8 w-full min-[769px]:hidden flex justify-center center mb-16">
+				<div className="min-[769px] max-w-[768px] w-full justify-end flex">
+					<IoFilter className="text-[20px]" onClick={handleFilterClick} />
 				</div>
 			</div>
 			<section
@@ -65,7 +66,7 @@ const Categories = (props) => {
 									<FiChevronDown className="rotate-[-90deg] h-icon" />
 								</button>
 								{/* submenu */}
-								<div className="max-w-[228px] w-full h-[172px] submenu-con flex flex-col gap-[10px] justify-center items-center ">
+								<div className="max-w-[228px] w-full h-[172px] submenu-con hidden flex flex-col gap-[10px] justify-center items-center ">
 									{/* submenulist */}
 									{category.name.map((subcategory) => {
 										const mark = subcategory.mark;
