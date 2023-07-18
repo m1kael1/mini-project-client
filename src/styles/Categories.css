@@ -1,7 +1,3 @@
-.active-side-filter {
-	right: 0;
-}
-
 .h-btncategories:hover .h-icon {
 	transform: rotate(0deg);
 	transition: all 0.3s ease-in-out;
