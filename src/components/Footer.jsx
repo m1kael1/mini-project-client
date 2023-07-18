@@ -10,10 +10,10 @@ const Footer = () => {
 		<div className="Footer">
 			<div className="Footer-Container">
 				<div className="row-1">
-					<div className="logo2">
+					<NavLink to="/" className="logo2">
 						<img className="logo" src={logo} alt="" />
-						<p className="text-xl font-bold text-white">Logo</p>
-					</div>
+						<p className="text-xl font-bold text-white">LOGO</p>
+					</NavLink>
 					<p className="textfooter">
 						Copyright reserved 2023 Link Data Technology
 					</p>
