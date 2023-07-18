@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import logo from "../assets/logo.svg";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
@@ -6,8 +6,23 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
 	const [showNav, setShowNav] = useState(false);
+	const navRef = useRef(null);
+
+	useEffect(() => {
+		document.addEventListener("click", handleClickOutside);
+		return () => document.removeEventListener("click", handleClickOutside);
+	}, []);
+
+	const handleClickOutside = (event) => {
+		if (navRef.current && !navRef.current.contains(event.target)) {
+			setShowNav(false);
+		}
+	};
 	return (
-		<nav className=" bg-color container-nav w-full min-w-300 h-[72px] top-0 fixed left-0 items-center flex z-[99999] justify-center">
+		<nav
+			ref={navRef} // Assign ref to the navbar container
+			className="bg-color container-nav w-full min-w-300 h-[72px] top-0 fixed left-0 items-center flex z-[99999] justify-center"
+		>
 			<section className="min-w-300 w-[1385px] h-[62px] flex items-center justify-between">
 				<NavLink
 					to="/"
