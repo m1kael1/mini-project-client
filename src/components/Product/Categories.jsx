@@ -38,7 +38,7 @@ const Categories = (props) => {
 			</div>
 			<section
 				className={`categories-container max-[768px]:hidden w-full h-[227px] flex flex-col items-center pl-16 pr-16 ${
-					showCategories ? "right-0" : "right-[-300px]"
+					showCategories ? "active-side-filter" : "-right-[300px]"
 				}`}
 			>
 				<div className="max-w-[1152px] w-full  mb-8 text-[24px]  font-['poppins'] ">
