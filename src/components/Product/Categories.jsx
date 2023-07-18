@@ -30,14 +30,14 @@ const Categories = (props) => {
 			<div className="pr-8 w-full min-[769px]:hidden flex justify-center center mb-16">
 				<div className="min-[769px] max-w-[768px] w-full justify-end flex">
 					<IoFilter
-						className="text-[20px]"
+						className="text-[30px]"
 						onClick={() => setShowCategories(true)}
 					/>
 				</div>
 			</div>
 			<section
-				className={`categories-container max-[768px]:hidden w-full h-screen flex flex-col items-center pl-16 pr-16 ${
-					showCategories ? "active-side-filter" : "-right-[300px]"
+				className={`categories-container max-[768px]:hidden w-full h-[227px] flex flex-col items-center pl-16 pr-16 ${
+					showCategories ? "right-0" : "-right-[300px]"
 				}`}
 			>
 				<div className="max-w-[1152px] w-full  mb-8 text-[24px]  font-['poppins'] ">
