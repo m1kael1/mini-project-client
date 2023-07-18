@@ -33,7 +33,7 @@
 	background: #a3de83;
 	color: black;
 }
-@media (max-width: 768px) {
+@media (max-width: 975px) {
 	.categories-container {
 		display: flex;
 		flex-direction: column;

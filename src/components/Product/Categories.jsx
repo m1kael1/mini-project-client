@@ -27,8 +27,8 @@ const Categories = (props) => {
 
 	return (
 		<div>
-			<div className="pr-8 w-full min-[769px]:hidden flex justify-center center mb-16">
-				<div className="min-[769px] max-w-[768px] w-full justify-end flex">
+			<div className="pr-8 w-full min-[977px]:hidden flex justify-center center mb-16">
+				<div className="min-[977px] max-w-[768px] w-full justify-end flex">
 					<IoFilter
 						className="text-[20px]"
 						onClick={() => setShowCategories(true)}
@@ -47,7 +47,7 @@ const Categories = (props) => {
 					<hr className="mt-[15px]" />
 				</div>
 
-				<div className=" min-[769px]:hidden pr-4 pt-10 w-full flex justify-center center mb-5 ">
+				<div className=" min-[977px]:hidden pr-4 pt-10 w-full flex justify-center center mb-5 ">
 					<div className="max-w-[768px] w-full justify-end flex ">
 						<FaTimes
 							className="text-white"
