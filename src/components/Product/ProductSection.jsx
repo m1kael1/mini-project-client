@@ -41,7 +41,7 @@ const ProductSection = () => {
 	const endPage = Math.min(totalPages, startPage + maxDisplayedPages - 1);
 
 	return (
-		<>
+		<div>
 			<Categories getValue={getValue}></Categories>
 			<section className="product-section w-full h-auto flex justify-center items-center pr-4 pl-4">
 				<div className="container-product-section max-w-[1152px] justify-center flex  gap-[24px] flex-wrap gap-y-[65px] mb-[84px]">
@@ -95,7 +95,7 @@ const ProductSection = () => {
 					)}
 				</button>
 			</div>
-		</>
+		</div>
 	);
 };
 

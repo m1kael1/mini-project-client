@@ -44,7 +44,7 @@ const FormField = () => {
 	};
 
 	return (
-		<>
+		<div>
 			<section className="w-full flex justify-center pb-52 pl-4 pr-4">
 				<form className="mt-28 max-w-[564px] w-full">
 					<div className="flex flex-col gap-14">
@@ -157,7 +157,7 @@ const FormField = () => {
 					</div>
 				</form>
 			</section>
-		</>
+		</div>
 	);
 };
 

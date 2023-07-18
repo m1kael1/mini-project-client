@@ -5,7 +5,7 @@ var products = [
 		name: "juniper mx 400",
 		stok: "1",
 		price: "398.000.000",
-		categories1: "Bekas",
+		categories1: "Bekas", // kondisi
 		categories2: "Router",
 		desc: [
 			"Chassis Juniper MX480",

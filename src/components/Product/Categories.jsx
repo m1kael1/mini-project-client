@@ -26,7 +26,7 @@ const Categories = (props) => {
 	const result = findBrandAndTagByMark(markToFind);
 
 	return (
-		<>
+		<div>
 			<div className=" pr-8 w-full min-[769px]:hidden flex justify-center center mb-16 ">
 				<div className="min-[769px] max-w-[768px] w-full justify-end  flex ">
 					<IoFilter
@@ -91,7 +91,7 @@ const Categories = (props) => {
 					</div>
 				</div>
 			</section>
-		</>
+		</div>
 	);
 };
 
