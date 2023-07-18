@@ -56,7 +56,7 @@ const Categories = (props) => {
 					</div>
 				</div>
 				<div className="max-w-[1152px] w-full">
-					<div className="menu-brand flex flex-wrap gap-[80px] mb-[15px] ">
+					<div className="menu-brand flex flex-wrap gap-x-[60px] gap-y-[30px] z-30 mb-[15px] ">
 						{category.map((category, index) => (
 							<div key={index} className="h-btncategories">
 								{/* menutitle */}
@@ -65,7 +65,7 @@ const Categories = (props) => {
 									<FiChevronDown className="rotate-[-90deg] h-icon" />
 								</button>
 								{/* submenu */}
-								<div className="max-w-[228px] w-full h-[172px] submenu-con hidden flex flex-col gap-[10px] justify-center items-center ">
+								<div className="max-w-[200px] w-full h-[172px] submenu-con z-[55] hidden flex flex-col gap-[10px] justify-center items-center ">
 									{/* submenulist */}
 									{category.name.map((subcategory) => {
 										const mark = subcategory.mark;
@@ -78,7 +78,7 @@ const Categories = (props) => {
 										return (
 											<button
 												key={mark}
-												className="max-w-[198px] w-full h-[44px] rounded-[8px] uppercase "
+												className="max-w-[150px] w-full h-[44px] rounded-[8px] uppercase "
 												onClick={() => setFilter()}
 											>
 												{subcategory.tag}
