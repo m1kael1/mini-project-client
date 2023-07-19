@@ -126,7 +126,7 @@ img {
 	gap: 9px;
 	width: auto;
 	height: 34px;
-	background: rgba(212, 118, 244, 0.6);
+	background: #44B07C;
 	backdrop-filter: blur(2px);
 	border-radius: 10px;
 	flex: none;
@@ -137,7 +137,7 @@ img {
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 130%;
-	color: #f7f39a;
+	color: #ffffff;
 }
 .at {
 	display: flex;

@@ -150,7 +150,7 @@ const FormField = () => {
 					<div>
 						<div
 							onClick={handleContact}
-							className="mt-24 font-['poppins']  text-center tracking-[0.07em] text-xl bg-[#A3DE83] w-full  py-4 rounded-lg drop-shadow-[0_0_5px_rgba(0,0,0,0.25)] cursor-pointer"
+							className="mt-24 font-['poppins']  text-white text-center tracking-[0.07em] text-xl bg-[#44B07C] w-full  py-4 rounded-lg drop-shadow-[0_0_5px_rgba(0,0,0,0.25)] cursor-pointer"
 						>
 							Kirimkan Pesan Anda
 						</div>

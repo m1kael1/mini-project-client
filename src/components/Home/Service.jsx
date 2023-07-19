@@ -34,11 +34,11 @@ const Service = () => {
 								<FaCheck />
 								Murah dan Cepat
 							</li>
-							<li className="at">
+							<li className="mc">
 								<FaCheck />
 								Aman dan Terpercaya
 							</li>
-							<li className="kb">
+							<li className="mc">
 								<FaCheck />
 								Kondisi Barang Bagus
 							</li>
@@ -72,11 +72,11 @@ const Service = () => {
 									<FaCheck />
 									Murah dan Cepat
 								</li>
-								<li className="at">
+								<li className="mc">
 									<FaCheck />
 									Aman dan Terpercaya
 								</li>
-								<li className="kb">
+								<li className="mc">
 									<FaCheck />
 									Kondisi Barang Bagus
 								</li>
@@ -101,11 +101,11 @@ const Service = () => {
 								<li className="mc">
 									<FaCheck /> Murah dan Cepat
 								</li>
-								<li className="at">
+								<li className="mc">
 									<FaCheck />
 									Aman dan Terpercaya
 								</li>
-								<li className="kb">
+								<li className="mc">
 									<FaCheck />
 									Kondisi Barang Bagus
 								</li>

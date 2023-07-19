@@ -1,14 +1,12 @@
-import React from 'react'
-import FormField from '../components/Contact/FormField'
-import Footer from '../components/Footer'
+import React from "react";
+import FormField from "../components/Contact/FormField";
 
 const Contact = () => {
-  return (
-    <div>
-      <FormField></FormField>
-      <Footer></Footer>
-    </div>
-  )
-}
+    return (
+        <div>
+            <FormField />
+        </div>
+    );
+};
 
-export default Contact
+export default Contact;

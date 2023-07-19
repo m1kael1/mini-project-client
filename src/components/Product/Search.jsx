@@ -1,6 +1,8 @@
 import React from "react";
 import "../../styles/Search.css";
 import { AiOutlineSearch } from "react-icons/ai";
+
+
 const Search = () => {
 	return (
 		<div className="mb-[80px] pl-4 pr-4 mt-[140px] flex justify-center ">
