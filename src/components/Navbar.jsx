@@ -54,12 +54,12 @@ const Navbar = () => {
 						</NavLink>
 					</li>
 					<li className=" list-none">
-						<NavLink
-							to="/product"
+						<a
+							href="/product"
 							className="link-menu h-12 flex items-center justify-center font-normal text-white text-xs"
 						>
 							PRODUK
-						</NavLink>
+						</a>
 					</li>
 					<li className=" list-none">
 						<NavLink
