@@ -1,20 +1,19 @@
 import React, { useState } from "react";
-// import Categories from "./Categories";
 import Search from "./Search";
 import { Link, useParams } from "react-router-dom";
 import whatsapplogo from "../../assets/whatsapp-logo.svg";
-import Footer from "../Footer";
 
 const ProductView = ({ item }) => {
 	const params = useParams();
 	const testcall = item[params.id - 1];
+	const [valueSearch, setValueSearch] = useState();
+
 	// untuk list desc
 	const list = testcall.desc;
 
 	return (
-		<div>
-			<Search />
-			{/* <Categories></Categories> */}
+		<>
+			<Search onSearch={setValueSearch} />
 			{/* product view */}
 			<div className="product-detail ">
 				<div className="w-full flex h-auto justify-center gap-[26px]">
@@ -54,7 +53,7 @@ const ProductView = ({ item }) => {
 						<div className="w-[368px] h-[42px] flex justify-between">
 							<a
 								href="/"
-								className="w-[172px] h-[42px] flex items-center border-solid border-[2px] border-solid gap-[27px] border-[#239D60] rounded-[10px] justify-center font-['poppins'] tracking-[0.07em] hover:bg-[#239D60] hover:text-white transition duration-150 ease-in-out"
+								className="w-[172px] h-[42px] flex items-center border-[2px] border-solid gap-[27px] border-[#239D60] rounded-[10px] justify-center font-['poppins'] tracking-[0.07em] hover:bg-[#239D60] hover:text-white transition duration-150 ease-in-out"
 							>
 								CHAT VIA <img src={whatsapplogo} alt="" />
 							</a>
@@ -84,8 +83,7 @@ const ProductView = ({ item }) => {
 					</div>
 				</div>
 			</div>
-			<Footer />
-		</div>
+		</>
 	);
 };
 

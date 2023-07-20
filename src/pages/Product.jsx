@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Search from "../components/Product/Search";
 import ProductSection from "../components/Product/ProductSection";
 
 const Product = () => {
+	const [valueSearch, setValueSearch] = useState("");
+
 	return (
 		<>
-			<Search />
-			<ProductSection />
+			<Search onSearch={setValueSearch}></Search>
+			<ProductSection valueSearch={valueSearch}></ProductSection>
 		</>
 	);
 };

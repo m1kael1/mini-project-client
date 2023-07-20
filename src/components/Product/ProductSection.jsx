@@ -1,27 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CardProduct from "../CardProduct";
 import products from "../../data/products.js";
 import Categories from "./Categories";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { AiOutlineStop } from "react-icons/ai";
 
-const ProductSection = () => {
+const ProductSection = ({ valueSearch }) => {
 	const [filter, setFilter] = useState("");
 	const [currentPage, setCurrentPage] = useState(1);
 	const [itemsPerPage, setItemsPerPage] = useState(8);
+	const [searchText, setSearchText] = useState("");
+
+	console.log(searchText);
+
+	useEffect(() => {
+		if (valueSearch !== undefined) {
+			setSearchText(valueSearch);
+			setFilter("");
+		}
+	}, [valueSearch]);
 
 	const getValue = (value) => {
+		setSearchText("");
 		setFilter(value);
 		setCurrentPage(1);
 	};
 
 	const filterData = products.filter((item) => {
-		if (filter === "") {
+		if (filter === "" && searchText === "") {
 			return true;
-		} else {
+		} else if (filter !== "" && searchText === "") {
 			return item.mark === filter;
+		} else if (filter === "" && searchText !== "") {
+			return item.name.toLowerCase().includes(searchText.toLowerCase());
+		} else {
+			return (
+				item.mark === filter &&
+				item.name.toLowerCase().includes(searchText.toLowerCase())
+			);
 		}
 	});
+
 	const totalPages = Math.ceil(filterData.length / itemsPerPage);
 
 	const handlePageChange = (pageNumber) => {
@@ -42,7 +61,7 @@ const ProductSection = () => {
 
 	return (
 		<div>
-			<Categories getValue={getValue}></Categories>
+			<Categories search={searchText} getValue={getValue}></Categories>
 			<section className="product-section w-full h-auto flex justify-center items-center pr-4 pl-4">
 				<div className="container-product-section max-w-[1152px] justify-center flex  gap-[24px] flex-wrap gap-y-[65px] mb-[84px]">
 					{currentItems.map((product) => (

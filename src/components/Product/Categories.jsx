@@ -9,6 +9,8 @@ const Categories = (props) => {
 	const [value, setValue] = useState(null);
 	const [showCategories, setShowCategories] = useState(false);
 
+	const search = props.search;
+
 	function findBrandAndTagByMark(mark) {
 		const foundItems = category.map((item) => {
 			const nameItem = item.name.find((nameObj) => nameObj.mark === mark);
@@ -40,10 +42,19 @@ const Categories = (props) => {
 					showCategories ? "right-0" : "-right-[300px]"
 				}`}
 			>
-				<div className="max-w-[1152px] w-full  mb-8 text-[24px]  font-['poppins'] ">
-					Mencari :{" "}
-					<span className="text-[#1170FF] capitalize">{result?.brand}</span> /{" "}
-					<span className="text-[#1170FF] capitalize">{result?.tag}</span>
+				<div className="max-w-[1152px] w-full mb-8 text-[24px] font-['poppins']">
+					{search === "" ? (
+						<div>
+							Mencari :{" "}
+							<span className="text-[#1170FF] capitalize">{result?.brand}</span>{" "}
+							/ <span className="text-[#1170FF] capitalize">{result?.tag}</span>
+						</div>
+					) : (
+						<div>
+							Mencari :{" "}
+							<span className="text-[#1170FF] capitalize">{search}</span>
+						</div>
+					)}
 					<hr className="mt-[15px]" />
 				</div>
 
