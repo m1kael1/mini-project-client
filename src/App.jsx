@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -8,12 +8,12 @@ import products from "./data/products";
 import Layanan from "./pages/Layanan";
 import About from "./pages/About";
 import MainLayout from "./layouts/MainLayout";
-import SearchLayout from "./layouts/SearchLayout";
 import NotFound from "./pages/NotFound";
+import SearchLayout from "./layouts/SearchLayout";
 
 const App = () => {
 	const [valueSearch, setValueSearch] = useState("");
-	console.log;
+
 	const handleSearch = (resetValue) => {
 		setValueSearch(resetValue);
 	};
@@ -24,7 +24,10 @@ const App = () => {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/layanan" element={<Layanan />} />
-						<Route path="/product" element={<Product />} />
+						<Route
+							path="/product"
+							element={<Product searchProduct={valueSearch} />}
+						/>
 						<Route path="/contact" element={<Contact />} />
 						<Route
 							path="/product/:id"
