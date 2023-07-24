@@ -3,7 +3,7 @@
 }
 
 .link-menu:hover {
-	color: rgba(35, 157, 96);
+	color: hsl(150, 64%, 38%);
 }
 .bg-color {
 	background: rgba(35, 157, 96, 0.6);

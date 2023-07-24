@@ -20,7 +20,7 @@ const Navbar = () => {
 	};
 	return (
 		<nav
-			ref={navRef} // Assign ref to the navbar container
+			ref={navRef}
 			className="bg-color container-nav w-full min-w-300 h-[72px] top-0 fixed left-0 items-center flex z-[99999] justify-center"
 		>
 			<section className="min-w-300 w-[1385px] h-[62px] flex items-center justify-between">
@@ -54,12 +54,12 @@ const Navbar = () => {
 						</NavLink>
 					</li>
 					<li className=" list-none">
-						<a
-							href="/product"
+						<NavLink
+							to="/product"
 							className="link-menu h-12 flex items-center justify-center font-normal text-white text-xs"
 						>
 							PRODUK
-						</a>
+						</NavLink>
 					</li>
 					<li className=" list-none">
 						<NavLink

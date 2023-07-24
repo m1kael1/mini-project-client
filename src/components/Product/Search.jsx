@@ -15,7 +15,8 @@ const Search = ({ onSearch }) => {
 
 	const handleButtonClick = (event) => {
 		event.preventDefault();
-		onSearch(searchText);
+		const searchValue = searchText === "" ? " " : searchText;
+		onSearch(searchValue);
 		navigateTo(`/product`);
 	};
 

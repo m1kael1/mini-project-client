@@ -54,9 +54,9 @@ const Footer = () => {
 						<Link className="link-footer" to="/contact">
 							Contact
 						</Link>
-						<a className="link-footer" href="/product">
+						<NavLink className="link-footer" to="/product">
 							Product
-						</a>
+						</NavLink>
 					</div>
 				</div>
 			</div>
