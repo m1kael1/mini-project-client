@@ -1,14 +1,22 @@
 import React, { useState } from "react";
-import Search from "../components/Product/Search";
 import ProductSection from "../components/Product/ProductSection";
+import SearchLayout from "../layouts/SearchLayout";
 
-const Product = () => {
-	const [valueSearch, setValueSearch] = useState("");
+const Product = ({ searchProduct }) => {
+	const [valueSearch, setValueSearch] = useState(searchProduct);
+
+	const handleSearch = (resetValue) => {
+		setValueSearch(resetValue);
+	};
 
 	return (
 		<>
-			<Search onSearch={setValueSearch}></Search>
-			<ProductSection valueSearch={valueSearch}></ProductSection>
+			<SearchLayout onSearch={handleSearch} valueSearch={valueSearch}>
+				<ProductSection
+					resetValueSearch={() => handleSearch("")}
+					valueSearch={valueSearch}
+				/>
+			</SearchLayout>
 		</>
 	);
 };

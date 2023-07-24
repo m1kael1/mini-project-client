@@ -11,8 +11,8 @@ const Quotes = () => {
 					APA KATA CUSTOMER KITA
 				</h1>
 				<div className="hide-scroll h-[450px] max-w-[1152px] w-[100%] flex relative overflow-x-scroll gap-[24px] min-w-300">
-					<span className="gradien-slide w-[98px] h-full flex z-30 absolute left-0 "></span>
-					<span className="gradien-slide w-[98px] h-full flex z-30 absolute -right-1 rotate-180 "></span>
+					<span className="gradien-slide  h-full flex z-30 absolute left-0 "></span>
+					<span className="gradien-slide  h-full flex z-30 absolute -right-1 rotate-180 "></span>
 					<div className="hide-scroll pl-[98px] pr-[98px] h-[450px]max-w-[1152px] w-[100%] flex relative overflow-x-scroll gap-[24px] min-w-300">
 						{quotes.map((quotes) => (
 							<CardQuote key={quotes.no} quotes={quotes} />

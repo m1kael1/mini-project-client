@@ -4,8 +4,8 @@
 	height: auto;
 	display: flex;
 	justify-content: center;
-	padding: 168px 0 20px 20px;
-	margin-bottom: 95px;
+	padding: 150px 20px 0 20px;
+	margin-bottom: 0px;
 	gap: 161px;
 }
 .tawaran {
@@ -14,7 +14,7 @@
 	height: auto;
 	max-width: 1149px;
 	flex-direction: column;
-	gap: 160px;
+	gap: 100px;
 }
 .tawaran h2 {
 	text-align: center;
@@ -53,9 +53,6 @@
 	width: 100%;
 	min-height: 437px;
 	height: auto;
-	flex: none;
-	order: 1;
-	flex-grow: 0;
 }
 .frame-6 {
 	width: 100%;
@@ -66,7 +63,7 @@
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 0px;
-	gap: 50px;
+	gap: 20px;
 }
 .frame-6 h3 {
 	font-family: "Poppins";
@@ -89,6 +86,7 @@
 	font-size: 16px;
 	line-height: 130%;
 	color: #212125;
+	text-align: justify;
 }
 .frame-5 {
 	display: flex;
@@ -126,7 +124,7 @@ img {
 	gap: 9px;
 	width: auto;
 	height: 34px;
-	background: #44B07C;
+	background: #44b07c;
 	backdrop-filter: blur(2px);
 	border-radius: 10px;
 	flex: none;
@@ -188,12 +186,8 @@ img {
 	padding: 0px;
 	gap: 180px;
 	width: 100%;
-	min-height: 479px;
+	min-height: 437px;
 	height: auto;
-	flex: none;
-	order: 2;
-	flex-grow: 0;
-	gap: 50px;
 }
 .frame-9 {
 	display: flex;
@@ -203,7 +197,7 @@ img {
 	gap: 40px;
 	max-width: 405px;
 	width: 100%;
-	min-height: 479px;
+
 	height: auto;
 	flex: none;
 	order: 1;
@@ -252,6 +246,7 @@ img {
 	flex: none;
 	order: 1;
 	flex-grow: 0;
+	text-align: justify;
 }
 .frame-7 {
 	display: flex;
@@ -274,9 +269,8 @@ img {
 	padding: 0px;
 	gap: 180px;
 	width: 100%;
-	height: 421px;
-	order: 3;
-	flex-grow: 0;
+	min-height: 437px;
+	height: auto;
 }
 .frame-12 {
 	display: flex;
@@ -319,6 +313,7 @@ img {
 	align-items: flex-start;
 	padding: 0px;
 	gap: 20px;
+	text-align: justify;
 }
 .img-3 {
 	width: 564px;
@@ -349,6 +344,7 @@ img {
 		padding: 128px 20px 0 20px;
 		min-height: 1500px;
 		height: auto;
+		margin-bottom: 50px;
 	}
 	.feat-1,
 	.feat-2,
@@ -358,10 +354,11 @@ img {
 	}
 	.feat-1 {
 		margin-top: 50px;
+		margin-bottom: -45px;
 	}
 
 	.title h2 {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	.service-con h3 {
@@ -370,7 +367,8 @@ img {
 
 	.service-con p {
 		font-size: 12px;
-		min-height: 144px;
+		min-height: 100px;
+		height: auto;
 	}
 
 	.tawaran {
@@ -380,6 +378,6 @@ img {
 
 	.frame-6,
 	.frame-9.frame-12 {
-		gap: 40px;
+		gap: 18px;
 	}
 }

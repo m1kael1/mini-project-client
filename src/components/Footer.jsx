@@ -51,7 +51,7 @@ const Footer = () => {
 						<NavLink className="link-footer" to="/about">
 							Tentang Kami
 						</NavLink>
-						<Link className="link-footer" to="">
+						<Link className="link-footer" to="/contact">
 							Contact
 						</Link>
 						<a className="link-footer" href="/product">

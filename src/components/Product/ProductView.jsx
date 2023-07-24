@@ -1,19 +1,17 @@
 import React, { useState } from "react";
-import Search from "./Search";
+import SearchLayout from "../../layouts/SearchLayout";
 import { Link, useParams } from "react-router-dom";
 import whatsapplogo from "../../assets/whatsapp-logo.svg";
 
 const ProductView = ({ item }) => {
 	const params = useParams();
 	const testcall = item[params.id - 1];
-	const [valueSearch, setValueSearch] = useState();
 
 	// untuk list desc
 	const list = testcall.desc;
 
 	return (
 		<>
-			<Search onSearch={setValueSearch} />
 			{/* product view */}
 			<div className="product-detail ">
 				<div className="w-full flex h-auto justify-center gap-[26px]">

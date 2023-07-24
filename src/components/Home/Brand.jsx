@@ -8,7 +8,7 @@ import "../../styles/Brand.css";
 
 const Brand = () => {
 	return (
-		<div className="container-brands w-full min-w-300 relative h-[315px] flex items-center justify-center">
+		<div className="container-brands w-full min-w-300 relative  flex items-center justify-center">
 			<div className="sec-con-brand flex justify-center gap-[56px] min-w-300 w-screen h-[100px] items-center">
 				<div className="brand-logo cisco w-[184px] h-auto">
 					<Link to="https://www.cisco.com/" target="_blank">

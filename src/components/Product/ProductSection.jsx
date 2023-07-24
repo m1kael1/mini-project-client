@@ -1,26 +1,23 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import CardProduct from "../CardProduct";
 import products from "../../data/products.js";
 import Categories from "./Categories";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { AiOutlineStop } from "react-icons/ai";
 
-const ProductSection = ({ valueSearch }) => {
+const ProductSection = ({ valueSearch, resetValueSearch }) => {
 	const [filter, setFilter] = useState("");
 	const [currentPage, setCurrentPage] = useState(1);
 	const [itemsPerPage, setItemsPerPage] = useState(8);
 	const [searchText, setSearchText] = useState("");
 
-	console.log(searchText);
-
 	useEffect(() => {
-		if (valueSearch !== undefined) {
-			setSearchText(valueSearch);
-			setFilter("");
-		}
+		setSearchText(valueSearch);
+		setFilter("");
 	}, [valueSearch]);
 
 	const getValue = (value) => {
+		resetValueSearch(value);
 		setSearchText("");
 		setFilter(value);
 		setCurrentPage(1);
