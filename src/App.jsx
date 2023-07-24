@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -12,6 +12,11 @@ import NotFound from "./pages/NotFound";
 import SearchLayout from "./layouts/SearchLayout";
 
 const App = () => {
+	const [valueSearch, setValueSearch] = useState("");
+
+	const handleSearch = (resetValue) => {
+		setValueSearch(resetValue);
+	};
 	return (
 		<>
 			<BrowserRouter>
