@@ -17,8 +17,8 @@ const Service = () => {
 				{/* feat 1 */}
 				<div className="feat-1">
 					<div className="frame-6">
+						<h3>Penjualan Produk</h3>
 						<div className="frame-5">
-							<h3>Penjualan Produk</h3>
 							<p>
 								Kami menyediakan layanan penjualan perangkat networking yang
 								lengkap dan mudah. Kami menyediakan router, switch, modem,

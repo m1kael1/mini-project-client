@@ -9,7 +9,7 @@ const Categories = (props) => {
 	const [value, setValue] = useState(null);
 	const [showCategories, setShowCategories] = useState(false);
 
-	const search = props.search;
+	let search = props.search;
 
 	function findBrandAndTagByMark(mark) {
 		const foundItems = category.map((item) => {
@@ -76,7 +76,7 @@ const Categories = (props) => {
 									<FiChevronDown className="rotate-[-90deg] h-icon" />
 								</button>
 								{/* submenu */}
-								<div className="max-w-[200px] w-full h-[172px] submenu-con z-[55] hidden flex flex-col gap-[10px] justify-center items-center ">
+								<div className="max-w-[200px] w-full h-[172px] submenu-con z-[55] hidden  flex-col gap-[10px] justify-center items-center ">
 									{/* submenulist */}
 									{category.name.map((subcategory) => {
 										const mark = subcategory.mark;

@@ -20,7 +20,7 @@
 	}
 
 	.quotes-section h1 {
-		font-size: 16px;
+		font-size: 20px;
 	}
 
 	.hide-scroll {
@@ -28,7 +28,8 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+
 	.gradien-slide {
-		width: 35px;
+		width: 30px;
 	}
 }

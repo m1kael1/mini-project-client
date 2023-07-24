@@ -176,5 +176,17 @@ var products = [
 		brand: "juniper",
 		mark: "jpServer",
 	},
+	{
+		id: 14,
+		img: "https://multipro.id/image/cache/Cisco/WS-C2960X-24TS-L-1000x1000.jpg",
+		name: "cisco catalyst 2960",
+		stok: "1",
+		price: "398.000.000",
+		categories1: "Bekas",
+		categories2: "Switch",
+		desc: [],
+		brand: "cisco",
+		mark: "cscSwitch",
+	},
 ];
 export default products;

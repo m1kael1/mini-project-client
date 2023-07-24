@@ -16,14 +16,14 @@ const Search = ({ onSearch }) => {
 	const handleButtonClick = (event) => {
 		event.preventDefault();
 		onSearch(searchText);
-		navigateTo(`/product?${encodeURIComponent(searchText)}`);
+		navigateTo(`/product`);
 	};
 
 	const handleKeyPress = (event) => {
 		if (event.key === "Enter") {
 			event.preventDefault();
 			onSearch(searchText);
-			navigateTo(`/product?${encodeURIComponent(searchText)}`);
+			navigateTo(`/product`);
 		}
 	};
 
