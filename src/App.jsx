@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -8,14 +8,10 @@ import products from "./data/products";
 import Layanan from "./pages/Layanan";
 import About from "./pages/About";
 import MainLayout from "./layouts/MainLayout";
+import NotFound from "./pages/NotFound";
 import SearchLayout from "./layouts/SearchLayout";
 
 const App = () => {
-	const [valueSearch, setValueSearch] = useState("");
-
-	const handleSearch = (resetValue) => {
-		setValueSearch(resetValue);
-	};
 	return (
 		<>
 			<BrowserRouter>
@@ -37,6 +33,7 @@ const App = () => {
 							}
 						/>
 						<Route path="/about" element={<About />} />
+						<Route path="*" element={<NotFound />} />
 					</Routes>
 				</MainLayout>
 			</BrowserRouter>
