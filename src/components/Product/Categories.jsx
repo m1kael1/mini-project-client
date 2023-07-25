@@ -112,16 +112,16 @@ const Categories = (props) => {
 									>
 										{category.brand}
 										<FiChevronDown
-											className={`rotate-[${
-												isSubCategoryOpen ? 0 : -90
-											}deg] h-icon   transition-transform duration-300`}
+											className={`${
+												isSubCategoryOpen ? "rotate-[0]" : "-rotate-[90deg]"
+											} h-icon   transition-transform duration-300`}
 										/>
 									</button>
 									{/* submenu */}
 									<div
 										className={`max-w-[200px] w-full submenu-con flex flex-col gap-[10px] justify-center items-center ${
 											isSubCategoryOpen
-												? "opacity-100  h-[173px]  duration-300"
+												? "opacity-100 h-[173px] duration-300"
 												: "opacity-0 bg-transparent max-[768px]:pt-0 pt-12 -z-50 h-0 invisible duration-200"
 										}`}
 									>
