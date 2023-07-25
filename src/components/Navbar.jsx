@@ -18,6 +18,11 @@ const Navbar = () => {
 			setShowNav(false);
 		}
 	};
+
+	const scrollto = (a, b) => {
+		window.scrollTo(a, b);
+	};
+
 	return (
 		<nav
 			ref={navRef}
@@ -25,6 +30,7 @@ const Navbar = () => {
 		>
 			<section className="min-w-300 w-[1385px] h-[62px] flex items-center justify-between">
 				<NavLink
+					onClick={() => scrollto(0, 0)}
 					to="/"
 					className="logo h-full ml-10 flex justify-center items-center"
 				>
@@ -47,6 +53,7 @@ const Navbar = () => {
 					</div>
 					<li className=" list-none">
 						<NavLink
+							onClick={() => scrollto(0, 0)}
 							to="/layanan"
 							className="link-menu h-12 flex items-center justify-center font-normal text-white text-xs"
 						>
@@ -55,6 +62,7 @@ const Navbar = () => {
 					</li>
 					<li className=" list-none">
 						<NavLink
+							onClick={() => scrollto(0, 0)}
 							to="/product"
 							className="link-menu h-12 flex items-center justify-center font-normal text-white text-xs"
 						>
@@ -63,6 +71,7 @@ const Navbar = () => {
 					</li>
 					<li className=" list-none">
 						<NavLink
+							onClick={() => scrollto(0, 0)}
 							to="/contact"
 							className="link-menu h-12 flex items-center justify-center font-normal text-white text-xs"
 						>
