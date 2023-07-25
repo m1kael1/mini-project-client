@@ -6,11 +6,14 @@ import tokopedia from "../assets/tokopedia.svg";
 import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
+	const scrollto = (a, b) => {
+		window.scrollTo(a, b);
+	};
 	return (
 		<div className="Footer">
 			<div className="Footer-Container">
 				<div className="row-1">
-					<NavLink to="/" className="logo2">
+					<NavLink onClick={() => scrollto(0, 0)} to="/" className="logo2">
 						<img className="logo" src={logo} alt="" />
 						<p className="text-xl font-bold text-white">LOGO</p>
 					</NavLink>
@@ -40,7 +43,7 @@ const Footer = () => {
 						<Link className="link-footer" to="https://wa.me/+6282145764595">
 							Whatsapp
 						</Link>
-						<Link className="link-footer" to="">
+						<Link className="link-footer" to="https://tokopedia.com">
 							Tokopedia
 						</Link>
 						<Link className="link-footer" to="https://gmail.com">
@@ -48,13 +51,25 @@ const Footer = () => {
 						</Link>
 					</div>
 					<div className="column-2">
-						<NavLink className="link-footer" to="/about">
+						<NavLink
+							onClick={() => scrollto(0, 0)}
+							className="link-footer"
+							to="/about"
+						>
 							Tentang Kami
 						</NavLink>
-						<Link className="link-footer" to="/contact">
+						<Link
+							onClick={() => scrollto(0, 0)}
+							className="link-footer"
+							to="/contact"
+						>
 							Contact
 						</Link>
-						<NavLink className="link-footer" to="/product">
+						<NavLink
+							onClick={() => scrollto(0, 0)}
+							className="link-footer"
+							to="/product"
+						>
 							Product
 						</NavLink>
 					</div>

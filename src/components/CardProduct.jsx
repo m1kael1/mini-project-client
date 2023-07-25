@@ -3,8 +3,11 @@ import whatsapplogo from "../assets/whatsapp-logo.svg";
 import { Link } from "react-router-dom";
 
 const CardProduct = ({ product }) => {
+	const scrollto = (a, b) => {
+		window.scrollTo(a, b);
+	};
 	return (
-		<div>
+		<div onClick={() => scrollto(0, 0)}>
 			{/* card-product */}
 			<div className="card-product w-[270px] p-4  bg-white rounded-[10px] shadow-[0px_0px_15px_rgba(0,0,0,0.25)] flex-col items-center flex">
 				<Link
