@@ -28,7 +28,7 @@ const Footer = () => {
 							</Link>
 						</div>
 						<div className="whatsapp">
-							<Link className="link-footer" to="">
+							<Link className="link-footer" to="https://wa.me/+6282145764595">
 								<img className="wa" src={whatsapp} alt="" />
 							</Link>
 						</div>
@@ -37,13 +37,13 @@ const Footer = () => {
 				<span className="line"></span>
 				<div className="row-2">
 					<div className="column-1">
-						<Link className="link-footer" to="">
+						<Link className="link-footer" to="https://wa.me/+6282145764595">
 							Whatsapp
 						</Link>
 						<Link className="link-footer" to="">
 							Tokopedia
 						</Link>
-						<Link className="link-footer" to="">
+						<Link className="link-footer" to="https://gmail.com">
 							Gmail
 						</Link>
 					</div>

@@ -43,6 +43,11 @@ const ProductSection = ({ valueSearch, resetValueSearch }) => {
 
 	const handlePageChange = (pageNumber) => {
 		setCurrentPage(pageNumber);
+		scrollto(0, 200);
+	};
+
+	const scrollto = (a, b) => {
+		window.scrollTo(a, b);
 	};
 
 	const indexOfLastItem = currentPage * itemsPerPage;
@@ -59,16 +64,18 @@ const ProductSection = ({ valueSearch, resetValueSearch }) => {
 
 	return (
 		<div>
-			<Categories search={searchText} getValue={getValue}></Categories>
+			<Categories search={searchText} getValue={getValue} />
 			<section className="product-section w-full h-auto flex justify-center items-center pr-4 pl-4">
 				<div className="container-product-section max-w-[1152px] justify-center flex  gap-[24px] flex-wrap gap-y-[65px] mb-[84px]">
 					{currentItems.map((product) => (
-						<CardProduct key={product.id} item={product} />
+						<CardProduct key={product.id} product={product} />
 					))}
 				</div>
 			</section>
+			{/* pagination list Produck */}
 			<div className="w-full flex justify-center mb-[30px] flex-wrap gap-2">
 				<button
+					key={currentPage - 1}
 					onClick={() => handlePageChange(currentPage - 1)}
 					disabled={currentPage === 1 || totalItems === 0}
 					className={`${
@@ -97,12 +104,13 @@ const ProductSection = ({ valueSearch, resetValueSearch }) => {
 					</button>
 				))}
 				<button
+					key={currentPage + 1}
 					onClick={() => handlePageChange(currentPage + 1)}
 					disabled={currentPage === totalPages || totalItems === 0}
 					className={`${
 						currentPage === totalPages || totalItems === 0
-							? "opacity-100 bg-gray-200 text-red-500 cursor-not-allowed hover:bg-red-500 hover:text-white"
-							: "opacity-100 hover:bg-green-500 hover:text-white cursor-pointer"
+							? "opacity-100 bg-gray-200 text-red-500 cursor-not-allowed hover:bg-red-500 hover:text-white "
+							: "opacity-100 hover:bg-green-500 hover:text-white cursor-pointer "
 					} px-4 py-2 mx-1 rounded-md bg-gray-200 text-gray-700`}
 				>
 					{currentPage === totalPages || totalItems === 0 ? (

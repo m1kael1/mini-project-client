@@ -30,10 +30,10 @@ const App = () => {
 						/>
 						<Route path="/contact" element={<Contact />} />
 						<Route
-							path="/product/:id"
+							path="/product/:name"
 							element={
 								<SearchLayout onSearch={handleSearch} valueSearch={valueSearch}>
-									<ProductView key={products.id} item={products} />
+									<ProductView key={products.id} products={products} />
 								</SearchLayout>
 							}
 						/>
