@@ -13,6 +13,7 @@ const ProductSection = ({ valueSearch, resetValueSearch }) => {
 
 	useEffect(() => {
 		setSearchText(valueSearch);
+		setCurrentPage(1);
 		setFilter("");
 	}, [valueSearch]);
 
