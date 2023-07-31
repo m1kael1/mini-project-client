@@ -20,7 +20,7 @@ cd mini-project-client
 npm install
 ```
 
-### Untuk run development server
+### Untuk run development client
 ```bash
 npm run dev
 ```
